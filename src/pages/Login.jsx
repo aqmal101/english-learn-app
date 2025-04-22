@@ -4,6 +4,8 @@ import { useState } from "react";
 import { useForm } from "react-hook-form";
 import TextButton from "../components/TextButton";
 import Alert from "../components/Alert";
+import { RefreshCcw } from "lucide-react";
+import Tooltip from "../components/Tooltip";
 
 const LoginPage = () => {
   const [role, setRole] = useState("student");
@@ -17,8 +19,8 @@ const LoginPage = () => {
     setAlertKey(Date.now());
   };
 
-  console.log(alertMessage);
-  console.log(alertType);
+  // console.log(alertMessage);
+  // console.log(alertType);
 
   const isStudent = role === "student";
   const navigate = useNavigate();
@@ -37,20 +39,22 @@ const LoginPage = () => {
         password: data.password,
       });
 
-      const token = response.data?.data?.token;
-      if (token) {
-        showAlert(response.message, "success");
+      const { token, user } = response.data?.meta?.data || {};
+      if (token && user) {
+        showAlert(response.data.meta.message, "success");
+
         localStorage.setItem("authToken", token);
+        localStorage.setItem("userInfo", JSON.stringify(user));
 
         setTimeout(() => {
-          navigate("/home"), 1000;
-        });
+          navigate("/home");
+        }, 1000);
       } else {
         throw new Error("Token tidak ditemukan");
       }
     } catch (error) {
       const message =
-        error.response?.data?.message ||
+        error.response?.meta?.message ||
         "Login failed. Please check your credentials.";
       showAlert(message, "error");
     }
@@ -59,7 +63,7 @@ const LoginPage = () => {
   return (
     <div className="h-screen flex flex-col justify-center items-center bg-[url('/img/background/Landscape.png')] bg-cover">
       <div className="w-[90%] max-w-md p-8 bg-white/90 rounded-2xl shadow-md flex flex-col items-center gap-6">
-        <h1 className="text-4xl font-bold">Login Page</h1>
+        <h1 className="text-4xl font-bold text-purple-900">Login Page</h1>
         <Alert
           key={alertKey}
           type={alertType}
@@ -109,13 +113,18 @@ const LoginPage = () => {
           </TextButton>
         </form>
 
-        <TextButton
-          onClick={() => setRole(role === "student" ? "teacher" : "student")}
-          color="yellow"
-          size="sm"
-        >
-          Login as {role === "student" ? "Teacher" : "Student"}
-        </TextButton>
+        <div className="flex items-center gap-2 mt-4">
+          <TextButton
+            onClick={() => setRole(role === "student" ? "teacher" : "student")}
+            color="yellow"
+            size="sm"
+          >
+            Login as {role === "student" ? "Teacher" : "Student"}
+          </TextButton>
+          <Tooltip text="Switch role" position="right">
+            <RefreshCcw className="stroke-amber-800 mt-1.5 cursor-pointer" />
+          </Tooltip>
+        </div>
       </div>
     </div>
   );
