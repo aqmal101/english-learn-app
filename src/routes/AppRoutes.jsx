@@ -7,6 +7,7 @@ import NotFound from "../pages/NotFound";
 import StoryBook from "../pages/BookDetail";
 import LandingPage from "../pages/Landing";
 import LoginPage from "../pages/Login";
+import ProfilePage from "../pages/Profile";
 
 const AppRoutes = () => {
   return (
@@ -18,6 +19,7 @@ const AppRoutes = () => {
       <Route path="/games" element={<Games />} />
       <Route path="/dashboard" element={<Dashboard />} />
       <Route path="/login" element={<LoginPage />} />
+      <Route path="/profile" element={<ProfilePage />} />
       <Route path="*" element={<NotFound />} />
     </Routes>
   );

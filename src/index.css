@@ -15,6 +15,18 @@ body {
         "wdth" 100;
 }
 
+/* index.css */
+body,
+html,
+#root {
+    user-select: none;
+    /* standard */
+    -webkit-user-select: none;
+    /* safari */
+    -ms-user-select: none;
+    /* ie10+ */
+}
+
 @layer utilities {
     .text-balance {
         text-wrap: balance;

@@ -1,12 +1,14 @@
 {
   "data": [
     {
-      "id": 1,
-      "title": "The Great Gatsby",
-      "author": "F. Scott Fitzgerald",
-      "year": 1925,
+      "id": "06d7e5fe-e4f1-4c0a-b807-090d46033501",
+      "title": "The Alphabet in the Land of Dewi Sri",
+      "author": "Miss Ani",
+      "year": 2025,
       "genre": "Fiction",
-      "image": "https://picsum.photos/seed/picsum/200/300"
+      "focus": "Alphabet",
+      "status": "available",
+      "image": "../../public/img/books/book1/cover.png"
     },
     {
       "id": 2,
@@ -14,6 +16,8 @@
       "author": "Harper Lee",
       "year": 1960,
       "genre": "Fiction",
+      "focus": "Alphabet",
+      "status": "locked",
       "image": "https://picsum.photos/seed/picsum/200/300"
     },
     {
@@ -22,6 +26,8 @@
       "author": "George Orwell",
       "year": 1949,
       "genre": "Dystopian",
+      "focus": "Alphabet",
+      "status": "locked",
       "image": "https://picsum.photos/seed/picsum/200/300"
     },
     {
@@ -30,6 +36,8 @@
       "author": "Jane Austen",
       "year": 1813,
       "genre": "Romance",
+      "focus": "Alphabet",
+      "status": "locked",
       "image": "https://picsum.photos/seed/picsum/200/300"
     },
     {
@@ -38,6 +46,8 @@
       "author": "Herman Melville",
       "year": 1851,
       "genre": "Adventure",
+      "focus": "Alphabet",
+      "status": "locked",
       "image": "https://picsum.photos/seed/picsum/200/300"
     },
     {
@@ -46,6 +56,8 @@
       "author": "Leo Tolstoy",
       "year": 1869,
       "genre": "Historical",
+      "focus": "Alphabet",
+      "status": "locked",
       "image": "https://picsum.photos/seed/picsum/200/300"
     }
   ]

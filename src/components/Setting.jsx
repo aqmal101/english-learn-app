@@ -17,7 +17,7 @@ const MenuItem = ({ icon, label, onClick, className = "" }) => (
   </div>
 );
 
-const Settings = () => {
+const Settings = ({ className }) => {
   const [showMenu, setShowMenu] = useState(false);
   const [role, setRole] = useState(null);
   const navigate = useNavigate();
@@ -34,7 +34,9 @@ const Settings = () => {
   };
 
   return (
-    <div className="fixed bottom-4 right-4 z-50 flex flex-col items-end gap-3">
+    <div
+      className={`fixed bottom-4 right-4 z-50 flex flex-col items-end gap-3 ${className}`}
+    >
       <AnimatePresence>
         {showMenu && (
           <motion.div
