@@ -3,6 +3,8 @@
 import { useState, useEffect } from "react";
 import { Play, Pause, ChevronLeft, ChevronRight } from "lucide-react";
 import DragDropComponent from "./DragDrop";
+import TappingImage from "./TappingImage";
+import TappingElement from "./TappingElement";
 
 const storyBookData = [
   {
@@ -70,90 +72,215 @@ const storyBookData = [
     id: "page-2",
     pageNumber: 2,
     content:
-      "One sunny morning, as Dewi Sri walked through the golden fields, she noticed the children were curious about how to read and write. ",
-    image:
-      "https://fastly.picsum.photos/id/62/2000/1333.jpg?hmac=PbFIn8k0AndjiUwpOJcfHz2h-wPCQi_vJRTJZPdr6kQ",
+      "One sunny morning, as Dewi Sri walked through the golden fields, she noticed the children were curious about how to read and write.",
+    image: "../../public/img/books/book1/page2.png",
     audio: "/story-audio-page2.mp3",
+    hasInteraction: true,
+    interactionType: "tapping",
+    interactionPrompt: "How many children are there around the rice field?",
+    tapAreas: [
+      { id: "child1", label: "Child 1", x: 10, y: 50, width: 10, height: 35 },
+      { id: "child2", label: "Child 2", x: 33, y: 60, width: 10, height: 35 },
+      { id: "child3", label: "Child 3", x: 65, y: 70, width: 10, height: 25 },
+      { id: "child4", label: "Child 4", x: 80, y: 70, width: 10, height: 25 },
+      { id: "child5", label: "Child 5", x: 86, y: 50, width: 10, height: 15 },
+    ],
   },
   {
     id: "page-3",
     pageNumber: 3,
     content:
       "She smiled and said, “Let me teach you the magic of the alphabet, so you can write about our rice fields and tell stories of our village.”Dewi Sri waved her hand, and sparkling letters appeared in the sky. The children were amazed as each letter told its own little story about life in the village.",
-    image:
-      "https://fastly.picsum.photos/id/62/2000/1333.jpg?hmac=PbFIn8k0AndjiUwpOJcfHz2h-wPCQi_vJRTJZPdr6kQ",
+    image: "../../public/img/books/book1/page3.png",
     audio: "/story-audio-page3.mp3",
+    hasInteraction: false,
   },
   {
     id: "page-4",
     pageNumber: 4,
     content:
       "A was for Andong, the cart pulled by buffalo. “Andong helps carry the rice to the market!” Dewi Sri explained.",
-    image:
-      "https://fastly.picsum.photos/id/62/2000/1333.jpg?hmac=PbFIn8k0AndjiUwpOJcfHz2h-wPCQi_vJRTJZPdr6kQ",
+    image: "../../public/img/books/book1/page4.png",
+
     audio: "/story-audio-page4.mp3",
+    hasInteraction: true,
+    interactionType: "tappingElement",
+    interactionPrompt: "Tap the letter that you see, hurry up!",
+    elements: [
+      { id: "a1", content: "A" },
+      { id: "a2", content: "A" },
+      { id: "a3", content: "A" },
+      { id: "a4", content: "A" },
+      { id: "a5", content: "A" },
+      { id: "a6", content: "A" },
+      { id: "a7", content: "A" },
+      { id: "a8", content: "A" },
+    ],
+    soundSrc: "/sounds/letter-a.mp3",
   },
   {
     id: "page-5",
     pageNumber: 5,
     content:
       "B was for Beras, the rice that everyone ate. “Beras gives us strength and happiness,” she said. ",
-    image:
-      "https://fastly.picsum.photos/id/62/2000/1333.jpg?hmac=PbFIn8k0AndjiUwpOJcfHz2h-wPCQi_vJRTJZPdr6kQ",
+    image: "../../public/img/books/book1/page5.png",
     audio: "/story-audio-page5.mp3",
+    hasInteraction: true,
+    interactionType: "tappingElement",
+    interactionPrompt: "Tap the letter that you see, hurry up!",
+    elements: [
+      { id: "b1", content: "B" },
+      { id: "b2", content: "B" },
+      { id: "b3", content: "B" },
+      { id: "b4", content: "B" },
+      { id: "b5", content: "B" },
+      { id: "b6", content: "B" },
+      { id: "b7", content: "B" },
+      { id: "b8", content: "B" },
+    ],
+    soundSrc: "/sounds/letter-b.mp3",
   },
   {
     id: "page-6",
     pageNumber: 6,
     content:
       "C was for Candi, the temple where people gave thanks. “It reminds us to be grateful for the blessings we have.”",
-    image:
-      "https://fastly.picsum.photos/id/62/2000/1333.jpg?hmac=PbFIn8k0AndjiUwpOJcfHz2h-wPCQi_vJRTJZPdr6kQ",
+    image: "../../public/img/books/book1/page6.png",
     audio: "/story-audio-page6.mp3",
+    hasInteraction: true,
+    interactionType: "tappingElement",
+    interactionPrompt: "Tap the letter that you see, hurry up!",
+    elements: [
+      { id: "c1", content: "C" },
+      { id: "c2", content: "C" },
+      { id: "c3", content: "C" },
+      { id: "c4", content: "C" },
+      { id: "c5", content: "C" },
+      { id: "c6", content: "C" },
+      { id: "c7", content: "C" },
+      { id: "c8", content: "C" },
+    ],
+    soundSrc: "/sounds/letter-c.mp3",
   },
   {
     id: "page-7",
     pageNumber: 7,
     content:
       "As they walked, Dewi Sri showed them more letters: D was for Dewa, the gods who protected the fields. E was for Emas, the golden rice that shone in the sunlight. F was for Fauna, the animals in the fields, like ducks and water buffalo.",
-    image:
-      "https://fastly.picsum.photos/id/62/2000/1333.jpg?hmac=PbFIn8k0AndjiUwpOJcfHz2h-wPCQi_vJRTJZPdr6kQ",
+    image: "../../public/img/books/book1/page7.png",
     audio: "/story-audio-page7.mp3",
+    hasInteraction: true,
+    interactionType: "tappingElement",
+    interactionPrompt: "Tap the letter that you see, hurry up!",
+    elements: [
+      { id: "d1", content: "D" },
+      { id: "d2", content: "E" },
+      { id: "d3", content: "F" },
+      { id: "d4", content: "D" },
+      { id: "d5", content: "E" },
+      { id: "d6", content: "F" },
+      { id: "d7", content: "D" },
+      { id: "d8", content: "E" },
+      { id: "d8", content: "F" },
+    ],
+    soundSrc: "/sounds/letter-c.mp3",
   },
   {
     id: "page-8",
     pageNumber: 8,
     content:
       "The children laughed when they saw G, which stood for Gong, the big musical instrument that echoed through the village. “We play the gong during festivals!” Dewi Sri said, clapping her hands. ",
-    image:
-      "https://fastly.picsum.photos/id/62/2000/1333.jpg?hmac=PbFIn8k0AndjiUwpOJcfHz2h-wPCQi_vJRTJZPdr6kQ",
+    image: "",
     audio: "/story-audio-page8.mp3",
+    hasInteraction: true,
+    interactionType: "tappingElement",
+    interactionPrompt: "Tap the letter that you see, hurry up!",
+    elements: [
+      { id: "G1", content: "G" },
+      { id: "G2", content: "G" },
+      { id: "G3", content: "G" },
+      { id: "G4", content: "G" },
+      { id: "G5", content: "G" },
+      { id: "G6", content: "G" },
+      { id: "G7", content: "G" },
+      { id: "G8", content: "G" },
+    ],
+    soundSrc: "/sounds/letter-c.mp3",
   },
   {
     id: "page-9",
     pageNumber: 9,
     content:
-      "Soon, the children began spotting letters everywhere: H was for Hujan, the rain that helped the rice grow.I was for Ikan, the fish swimming in the ponds near the fields.J was for Jagung, the corn that grew alongside the rice",
-    image:
-      "https://fastly.picsum.photos/id/62/2000/1333.jpg?hmac=PbFIn8k0AndjiUwpOJcfHz2h-wPCQi_vJRTJZPdr6kQ",
+      "Soon, the children began spotting letters everywhere: H was for Hujan, the rain that helped the rice grow. I was for Ikan, the fish swimming in the ponds near the fields. J was for Jagung, the corn that grew alongside the rice",
+    image: "",
     audio: "/story-audio-page8.mp3",
+    hasInteraction: true,
+    interactionType: "tappingElement",
+    interactionPrompt: "Tap the letter that you see, hurry up!",
+    elements: [
+      { id: "H1", content: "H" },
+      { id: "H2", content: "H" },
+      { id: "H3", content: "H" },
+      { id: "H4", content: "H" },
+      { id: "H5", content: "H" },
+      { id: "H6", content: "H" },
+      { id: "H7", content: "H" },
+      { id: "H8", content: "H" },
+    ],
+    soundSrc: "/sounds/letter-c.mp3",
   },
   {
     id: "page-10",
     pageNumber: 10,
     content:
       "Dewi Sri encouraged the children to use their voices. “Can you say, ‘H is for Hujan, I is for Ikan, J is for Jagung’?”They shouted happily, “H is for Hujan, I is for Ikan, J is for Jagung!”",
-    image:
-      "https://fastly.picsum.photos/id/62/2000/1333.jpg?hmac=PbFIn8k0AndjiUwpOJcfHz2h-wPCQi_vJRTJZPdr6kQ",
+    image: "",
     audio: "/story-audio-page8.mp3",
+    hasInteraction: true,
+    interactionType: "tappingElement",
+    interactionPrompt: "Tap the letter that you see, hurry up!",
+    elements: [
+      { id: "G1", content: "H" },
+      { id: "G2", content: "I" },
+      { id: "G3", content: "J" },
+      { id: "G4", content: "H" },
+      { id: "G5", content: "I" },
+      { id: "G6", content: "J" },
+      { id: "G7", content: "H" },
+      { id: "G8", content: "I" },
+      { id: "G8", content: "J" },
+    ],
+    soundSrc: "/sounds/letter-c.mp3",
   },
   {
     id: "page-10",
     pageNumber: 11,
     content:
       "As the sun set, Dewi Sri introduced the last letters:K for Keris, the traditional dagger.L for Lumbung, the rice barn where the harvest was stored.M for Mangga, the juicy mangoes they loved to eat.Repeat please, “K for Keris, L for Lumbung, M for Mangga!”",
-    image:
-      "https://fastly.picsum.photos/id/62/2000/1333.jpg?hmac=PbFIn8k0AndjiUwpOJcfHz2h-wPCQi_vJRTJZPdr6kQ",
+    image: "",
+    audio: "/story-audio-page8.mp3",
+    hasInteraction: true,
+    interactionType: "tappingElement",
+    interactionPrompt: "Tap the letter that you see, hurry up!",
+    elements: [
+      { id: "G1", content: "K" },
+      { id: "G2", content: "L" },
+      { id: "G3", content: "M" },
+      { id: "G4", content: "K" },
+      { id: "G5", content: "L" },
+      { id: "G6", content: "M" },
+      { id: "G7", content: "K" },
+      { id: "G8", content: "L" },
+      { id: "G8", content: "M" },
+    ],
+    soundSrc: "/sounds/letter-c.mp3",
+  },
+  {
+    id: "page-10",
+    pageNumber: 12,
+    content:
+      "The children clapped their hands and sang about the letters. “We’ve learned the alphabet with Dewi Sri, and now we can tell stories about our home!” Let’s sing this song together!",
+    image: "",
     audio: "/story-audio-page8.mp3",
   },
   {
@@ -161,17 +288,7 @@ const storyBookData = [
     pageNumber: 12,
     content:
       "The children clapped their hands and sang about the letters. “We’ve learned the alphabet with Dewi Sri, and now we can tell stories about our home!” Let’s sing this song together!",
-    image:
-      "https://fastly.picsum.photos/id/62/2000/1333.jpg?hmac=PbFIn8k0AndjiUwpOJcfHz2h-wPCQi_vJRTJZPdr6kQ",
-    audio: "/story-audio-page8.mp3",
-  },
-  {
-    id: "page-10",
-    pageNumber: 12,
-    content:
-      "The children clapped their hands and sang about the letters. “We’ve learned the alphabet with Dewi Sri, and now we can tell stories about our home!” Let’s sing this song together!",
-    image:
-      "https://fastly.picsum.photos/id/62/2000/1333.jpg?hmac=PbFIn8k0AndjiUwpOJcfHz2h-wPCQi_vJRTJZPdr6kQ",
+    image: "",
     audio: "/story-audio-page8.mp3",
   },
   {
@@ -179,8 +296,7 @@ const storyBookData = [
     pageNumber: 13,
     content:
       "Dewi Sri smiled warmly and gave them a gift—a magical book where they could write their stories and draw pictures of their favourite letters. “Remember,” she said, “the alphabet is like planting rice. Each letter is a seed that grows into beautiful words and stories.”",
-    image:
-      "https://fastly.picsum.photos/id/62/2000/1333.jpg?hmac=PbFIn8k0AndjiUwpOJcfHz2h-wPCQi_vJRTJZPdr6kQ",
+    image: "",
     audio: "/story-audio-page8.mp3",
   },
   {
@@ -188,8 +304,7 @@ const storyBookData = [
     pageNumber: 14,
     content:
       "From that day on, the children in the village of Dewi Sri became the best storytellers. They wrote about their fields, their animals, and their festivals, sharing their culture with the world.",
-    image:
-      "https://fastly.picsum.photos/id/62/2000/1333.jpg?hmac=PbFIn8k0AndjiUwpOJcfHz2h-wPCQi_vJRTJZPdr6kQ",
+    image: "",
     audio: "/story-audio-page8.mp3",
   },
 ];
@@ -199,6 +314,68 @@ export default function BookStory() {
   const [isPlaying, setIsPlaying] = useState(false);
   const [audio, setAudio] = useState(null);
   const [completedActivities, setCompletedActivities] = useState({});
+  const [tappedElements, setTappedElements] = useState({});
+
+  const [tappedAreas, setTappedAreas] = useState({});
+  const [showHints, setShowHints] = useState(false);
+
+  // Handle tapping on elements (letters)
+  const handleTapElement = (pageId, element) => {
+    setTappedElements((prev) => {
+      const newTapped = { ...prev };
+      if (!newTapped[pageId]) {
+        newTapped[pageId] = [];
+      }
+      if (!newTapped[pageId].includes(element.id)) {
+        newTapped[pageId] = [...newTapped[pageId], element.id];
+      }
+      return newTapped;
+    });
+  };
+
+  const handleTapArea = (pageId, area) => {
+    setTappedAreas((prev) => {
+      const newTapped = { ...prev };
+      if (!newTapped[pageId]) {
+        newTapped[pageId] = [];
+      }
+      if (!newTapped[pageId].includes(area.id)) {
+        newTapped[pageId] = [...newTapped[pageId], area.id];
+      }
+      return newTapped;
+    });
+  };
+
+  // Check if all elements for a page are completed
+  useEffect(() => {
+    Object.keys(tappedElements).forEach((pageId) => {
+      const page = storyBookData.find((p) => p.id === pageId);
+      if (
+        page &&
+        page.elements &&
+        tappedElements[pageId]?.length === page.elements.length
+      ) {
+        handleActivityComplete(pageId);
+      }
+    });
+  }, [tappedElements]);
+
+  const toggleHints = () => {
+    setShowHints(!showHints);
+  };
+
+  useEffect(() => {
+    Object.keys(tappedAreas).forEach((pageId) => {
+      const page = storyBookData.find((p) => p.id === pageId);
+      if (
+        page &&
+        page.tapAreas &&
+        tappedAreas[pageId].length === page.tapAreas.length
+      ) {
+        handleActivityComplete(pageId);
+      }
+    });
+  }, [tappedAreas]);
 
   const totalContentPages = storyBookData.length - 1;
   const totalSpreads = 1 + Math.ceil(totalContentPages / 2);
@@ -289,20 +466,62 @@ export default function BookStory() {
     if (!page) return <div className="flex-1 bg-amber-50"></div>;
 
     const isActivityCompleted = completedActivities[page.id];
+    const pageTappedAreas = tappedAreas[page.id] || [];
 
     return (
       <div className="flex flex-1 flex-col p-6 w-full h-full overflow-hidden">
         {/* Page Number Badge */}
         {page.pageNumber && (
-          <div className="absolute top-6 left-6 bg-amber-500 h-7 w-7 rounded-full flex justify-center items-center font-medium text-white text-sm z-10">
+          <div className="absolute top-10 left-10 bg-amber-500 h-7 w-7 rounded-full flex justify-center items-center font-medium text-white text-sm z-10">
             {page.pageNumber}
           </div>
         )}
 
         {/* Main content area - take most of the space but leave room for text */}
         <div className="relative flex-1 w-full h-4/5 overflow-hidden">
-          {/* Show drag and drop activity if page has it, otherwise show image */}
-          {page.hasActivity ? (
+          {/* Show tapping letters if the page has that interaction */}
+          {page.hasInteraction && page.interactionType === "tappingElement" ? (
+            <div className="w-full h-full">
+              <TappingElement
+                elements={page.elements}
+                elementType="letter"
+                backgroundImage={page.image || "/api/placeholder/600/400"}
+                soundSrc={page.soundSrc}
+                onTap={(element) => handleTapElement(page.id, element)}
+                prompt={page.interactionPrompt}
+                onComplete={() => handleActivityComplete(page.id)}
+                disappearAfter={10000}
+                appearInterval={2000}
+              />
+            </div>
+          ) : page.hasInteraction && page.interactionType === "tapping" ? (
+            <div className="w-full h-full flex flex-col">
+              <div className="flex-1 relative flex flex-col items-center justify-center">
+                <TappingImage
+                  src={page.image || "/api/placeholder/600/400"}
+                  alt={`Illustration for page ${page.pageNumber}`}
+                  tapAreas={page.tapAreas}
+                  onTap={(area) => handleTapArea(page.id, area)}
+                  showHints={showHints}
+                  className="rounded-lg shadow-md"
+                />
+                <div className="w-full flex flex-row justify-between items-center mt-2 bg-amber-100 p-2 rounded">
+                  <p className="text-xs text-amber-700">
+                    Found: {pageTappedAreas.length} / {page.tapAreas.length}
+                  </p>
+                  <p className="text-sm font-medium text-amber-800">
+                    {page.interactionPrompt}
+                  </p>
+                  <button
+                    onClick={toggleHints}
+                    className=" bg-amber-500 text-white px-2 py-1 text-xs rounded hover:bg-amber-600"
+                  >
+                    {showHints ? "Hide Hints" : "Show Hints"}
+                  </button>
+                </div>
+              </div>
+            </div>
+          ) : page.hasActivity ? (
             <div className="w-full h-full bg-white">
               <DragDropComponent
                 words={page.dragDropWords}
@@ -320,12 +539,15 @@ export default function BookStory() {
               />
             </div>
           )}
+
           {/* Completed message if activity is completed */}
-          {page.hasActivity && isActivityCompleted && (
-            <div className="absolute mt-2 p-2 z-10 bottom-0 right-1/4 left-1/4 bg-green-100 text-green-800 rounded text-center">
-              Great job! You've completed this activity!
-            </div>
-          )}
+          {(page.hasActivity ||
+            (page.hasInteraction && page.interactionType === "tapping")) &&
+            isActivityCompleted && (
+              <div className="absolute mt-2 p-2 z-10 bottom-0 right-1/4 left-1/4 bg-green-100 text-green-800 rounded text-center">
+                Great job! You've completed this activity!
+              </div>
+            )}
         </div>
 
         {/* Text Overlay at bottom */}
@@ -396,13 +618,13 @@ export default function BookStory() {
             >
               {isPlaying ? (
                 <>
-                  <Pause className="h-5 w-5" />
-                  <span className="ml-1">Pause</span>
+                  {/* <Pause className="h-5 w-5" />
+                  <span className="ml-1">Pause</span> */}
                 </>
               ) : (
                 <>
-                  <Play className="h-5 w-5" />
-                  <span className="ml-1">Listen</span>
+                  {/* <Play className="h-5 w-5" />
+                  <span className="ml-1">Listen</span> */}
                 </>
               )}
             </button>
