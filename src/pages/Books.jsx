@@ -19,7 +19,7 @@ const BookCover = ({ image, title, isLocked, isLoading, onClick }) => {
         <img
           src={image}
           alt={title}
-          className="w-36 h-48 object-cover relative rounded-lg shadow-lg"
+          className="w-72 h-48 object-cover hover:border-4 ease-in-out transition-all duration-300 border-amber-400 rounded-3xl relative shadow-lg"
         />
         {isLoading && (
           <div className="absolute inset-0 flex justify-center items-center bg-white/60 rounded-lg">

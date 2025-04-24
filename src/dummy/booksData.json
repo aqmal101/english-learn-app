@@ -8,7 +8,7 @@
       "genre": "Fiction",
       "focus": "Alphabet",
       "status": "available",
-      "image": "../../public/img/books/book1/cover.png"
+      "image": "/img/books/book1/cover.png"
     },
     {
       "id": 2,
