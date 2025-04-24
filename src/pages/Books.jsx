@@ -53,7 +53,7 @@ const BooksPage = () => {
     }, 800);
   };
   return (
-    <div className="relative bg-[url('/img/background/Landscape.png')] w-screen h-screen">
+    <div className="relative bg-[url('/img/background/Landscape2.png')] bg-cover bg-center bg-no-repeat w-screen h-screen">
       {/* Overlay putih semi-transparan */}
       <div className="absolute top-20 left-20 right-20 bottom-20 z-10 flex flex-col justify-center items-center rounded-2xl bg-white/50">
         <div

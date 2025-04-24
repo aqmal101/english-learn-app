@@ -10,7 +10,7 @@ const LandingPage = () => {
   };
 
   return (
-    <div className="h-screen max-h-screen bg-[url('/img/background/Landscape.png')] box-border overflow-hidden">
+    <div className="h-screen max-h-screen bg-[url('/img/background/Landscape.png')] p-5 bg-cover bg-center bg-no-repeat box-border overflow-hidden">
       <div className="w-full h-full flex justify-center items-center">
         <TextButton onClick={handleRouteLogin} color="pink" size="md">
           <div className="text-3xl font-bold">PLAY</div>

@@ -1,9 +1,18 @@
 import { useState, useEffect } from "react";
-import { Menu, Home, User, LayoutDashboard, LogOut, X } from "lucide-react";
+import {
+  Menu,
+  Home,
+  User,
+  LayoutDashboard,
+  LogOut,
+  X,
+  Link,
+} from "lucide-react";
 import GlowingButton from "./CandyButton";
 import { useNavigate } from "react-router-dom";
 // eslint-disable-next-line no-unused-vars
 import { AnimatePresence, motion } from "framer-motion";
+import Alert from "./Alert";
 
 const MenuItem = ({ icon, label, onClick, className = "" }) => (
   <div
@@ -20,23 +29,43 @@ const MenuItem = ({ icon, label, onClick, className = "" }) => (
 const Settings = ({ className }) => {
   const [showMenu, setShowMenu] = useState(false);
   const [role, setRole] = useState(null);
+  console.log(role);
   const navigate = useNavigate();
+  const baseURL = import.meta.env.VITE_BASE_URL;
+
+  const [alertMessage, setAlertMessage] = useState("");
+  // eslint-disable-next-line no-unused-vars
+  const [alertType, setAlertType] = useState("success");
+  // eslint-disable-next-line no-unused-vars
+  const [alertKey, setAlertKey] = useState(0);
+
+  const showAlert = (message, type = "success") => {
+    setAlertMessage(message);
+    setAlertType(type);
+    setAlertKey(Date.now());
+  };
 
   useEffect(() => {
-    const userData = JSON.parse(localStorage.getItem("authUser"));
+    const userData = JSON.parse(localStorage.getItem("userInfo"));
     setRole(userData?.role);
   }, []);
 
   const handleLogout = () => {
-    localStorage.removeItem("authUser");
+    localStorage.removeItem("userInfo");
     localStorage.removeItem("authToken");
-    navigate("/login");
+    localStorage.removeItem("userInfo");
+    showAlert("Logout sucessfuly", "success");
+
+    setTimeout(() => {
+      navigate("/login");
+    }, 1000);
   };
 
   return (
     <div
       className={`fixed bottom-4 right-4 z-50 flex flex-col items-end gap-3 ${className}`}
     >
+      <Alert message={alertMessage} duration={3000} />
       <AnimatePresence>
         {showMenu && (
           <motion.div
@@ -66,14 +95,12 @@ const Settings = ({ className }) => {
             />
 
             {role === "teacher" && (
-              <MenuItem
-                icon={<LayoutDashboard size={18} />}
-                label="Dashboard"
-                onClick={() => {
-                  navigate("/dashboard");
-                  setShowMenu(false);
-                }}
-              />
+              <a href={baseURL} target="_blank" rel="noopener noreferrer">
+                <MenuItem
+                  icon={<LayoutDashboard size={18} />}
+                  label="Dashboard"
+                />
+              </a>
             )}
 
             <MenuItem

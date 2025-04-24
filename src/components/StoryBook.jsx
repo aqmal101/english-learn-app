@@ -6,6 +6,7 @@ import DragDropComponent from "./DragDrop";
 import TappingImage from "./TappingImage";
 import TappingElement from "./TappingElement";
 import storyBookData from "../dummy/bookData1.json";
+import { useNavigate } from "react-router-dom";
 
 export default function BookStory() {
   const [currentSpreadIndex, setCurrentSpreadIndex] = useState(0);
@@ -14,6 +15,20 @@ export default function BookStory() {
 
   const [tappedAreas, setTappedAreas] = useState({});
   const [showHints, setShowHints] = useState(false);
+
+  const navigate = useNavigate();
+
+  const handleRouteHome = () => {
+    setTimeout(() => {
+      navigate("/home");
+    }, 1000);
+  };
+
+  const handleRouteLibrary = () => {
+    setTimeout(() => {
+      navigate("/books");
+    }, 1000);
+  };
 
   // Handle tapping on elements (letters)
   const handleTapElement = (pageId, element) => {
@@ -259,7 +274,10 @@ export default function BookStory() {
           </button>
 
           <div className="flex items-center flex-row space-x-4">
-            <button className="w-fit h-fit flex flex-row px-4 py-2 bg-amber-500 hover:bg-amber-600 text-white rounded-full cursor-pointer">
+            <button
+              onClick={handleRouteHome}
+              className="w-fit h-fit flex flex-row px-4 py-2 bg-amber-500 hover:bg-amber-600 text-white rounded-full cursor-pointer"
+            >
               <Home /> Go Home
             </button>
             <span className="mr-3 text-amber-700">
@@ -267,7 +285,10 @@ export default function BookStory() {
                 ? "Cover"
                 : `Spread ${currentSpreadIndex} of ${totalSpreads - 1}`}
             </span>
-            <button className="w-fit h-fit flex flex-row px-4 py-2 bg-amber-500 hover:bg-amber-600 text-white rounded-full cursor-pointer">
+            <button
+              onClick={handleRouteLibrary}
+              className="w-fit h-fit flex flex-row px-4 py-2 bg-amber-500 hover:bg-amber-600 text-white rounded-full cursor-pointer"
+            >
               <LibraryBig /> All Books
             </button>
           </div>

@@ -1,31 +1,38 @@
-import { Link } from "react-router-dom";
-import Diver from "../assets/diver.png";
+import { useNavigate } from "react-router-dom";
 
 const MenuList = [
-  { name: "Books", path: "/books" },
-  { name: "Games", path: "/games" },
+  { name: "Books", path: "/books", image: "/img/book.png" },
+  { name: "Games", path: "/games", image: "/img/game.png" },
 ];
 
 const Home = () => {
+  const navigate = useNavigate();
+
+  const handleClick = (path) => {
+    // Optional: add animation or loading state here
+    setTimeout(() => {
+      navigate(path);
+    }, 750); // 500ms delay
+  };
   return (
-    <div className="h-screen max-h-screen bg-white box-border overflow-hidden">
+    <div className="h-screen flex flex-col justify-center items-center bg-[url('/img/background/Landscape2.png')] bg-cover bg-center bg-no-repeat ">
       <div className="w-full h-full flex justify-center items-center">
-        <div className="w-1/2 border border-gray-50 h-fit flex justify-between items-center text-center">
+        <div className="w-1/2 h-fit flex justify-between items-center text-center">
           {MenuList.map((item, index) => (
-            <Link
+            <button
+              onClick={() => handleClick(item.path)}
               to={item.path}
               key={index}
               className="group flex flex-col items-center"
             >
-              <div className="w-36 h-36 p-2">
+              <div className="w-64 h-64 p-2">
                 <img
-                  src={Diver}
-                  alt="Diver"
-                  className="transition-all duration-300 group-hover:drop-shadow-[0_0_10px_rgba(0,0,255,1)]"
+                  src={item.image}
+                  alt={item.name}
+                  className="transition-all duration-300 group-hover:drop-shadow-[0_0_10px_rgba(255,165,0,1)]"
                 />
               </div>
-              <p>{item.name}</p>
-            </Link>
+            </button>
           ))}
         </div>
       </div>

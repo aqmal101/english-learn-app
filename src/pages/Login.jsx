@@ -22,7 +22,6 @@ const LoginPage = () => {
   // console.log(alertMessage);
   // console.log(alertType);
 
-  const isStudent = role === "student";
   const navigate = useNavigate();
   const baseURL = import.meta.env.VITE_BASE_URL;
 
@@ -61,9 +60,9 @@ const LoginPage = () => {
   };
 
   return (
-    <div className="h-screen flex flex-col justify-center items-center bg-[url('/img/background/Landscape.png')] bg-cover">
+    <div className="h-screen flex flex-col justify-center items-center bg-[url('/img/background/Landscape2.png')] bg-cover bg-center bg-no-repeat bg-cover">
       <div className="w-[90%] max-w-md p-8 bg-white/90 rounded-2xl shadow-md flex flex-col items-center gap-6">
-        <h1 className="text-4xl font-bold text-purple-900">Login Page</h1>
+        <h1 className="text-4xl font-bold text-purple-900">Login {role}</h1>
         <Alert
           key={alertKey}
           type={alertType}
@@ -77,7 +76,7 @@ const LoginPage = () => {
           className="w-full flex flex-col gap-4"
         >
           <input
-            placeholder={isStudent ? "Username" : "Email"}
+            placeholder="Email"
             className="w-full px-4 py-2 border rounded-full"
             {...register("username", {
               required: "Username/Email is required",
