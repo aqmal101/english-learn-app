@@ -18,7 +18,7 @@ const storyBookData = [
     pageNumber: 1,
     content:
       "Once upon a time, in a beautiful rice-growing village in Indonesia, there was a kind and gentle goddess named Dewi Sri. She was loved by everyone because she taught people how to plant rice and take care of the land. ",
-    image: "",
+    image: "../../public/img/books/book1/page1.png",
     audio: "/story-audio-page1.mp3",
     hasActivity: true,
     dragDropWords: [
@@ -41,29 +41,29 @@ const storyBookData = [
       {
         id: "mountain",
         label: "mountain",
-        x: 200,
-        y: 30,
-        width: 100,
+        x: 250,
+        y: 120,
+        width: 150,
         height: 80,
       },
       {
         id: "rice-plant",
         label: "rice plant",
-        x: 120,
-        y: 150,
-        width: 60,
+        x: 50,
+        y: 260,
+        width: 100,
         height: 70,
       },
-      { id: "farmer", label: "farmer", x: 300, y: 120, width: 60, height: 90 },
-      { id: "hut", label: "hut", x: 380, y: 80, width: 70, height: 70 },
+      { id: "farmer", label: "farmer", x: 400, y: 260, width: 50, height: 90 },
       {
         id: "buffalo",
         label: "buffalo",
-        x: 250,
-        y: 200,
+        x: 200,
+        y: 250,
         width: 80,
         height: 60,
       },
+      { id: "hut", label: "hut", x: 530, y: 180, width: 70, height: 70 },
     ],
   },
   {
@@ -303,7 +303,7 @@ export default function BookStory() {
         <div className="relative flex-1 w-full h-4/5 overflow-hidden">
           {/* Show drag and drop activity if page has it, otherwise show image */}
           {page.hasActivity ? (
-            <div className="w-full h-full bg-green-700">
+            <div className="w-full h-full bg-white">
               <DragDropComponent
                 words={page.dragDropWords}
                 dropZones={page.dropZones}
@@ -320,19 +320,18 @@ export default function BookStory() {
               />
             </div>
           )}
+          {/* Completed message if activity is completed */}
+          {page.hasActivity && isActivityCompleted && (
+            <div className="absolute mt-2 p-2 z-10 bottom-0 right-1/4 left-1/4 bg-green-100 text-green-800 rounded text-center">
+              Great job! You've completed this activity!
+            </div>
+          )}
         </div>
 
         {/* Text Overlay at bottom */}
         <div className="mt-4 bg-amber-500/20 p-3 rounded">
           <p className="text-sm leading-relaxed">{page.content}</p>
         </div>
-
-        {/* Completed message if activity is completed */}
-        {page.hasActivity && isActivityCompleted && (
-          <div className="absolute mt-2 p-2 z-10 top-6 right-1/4 left-1/4 bg-green-100 text-green-800 rounded text-center">
-            Great job! You've completed this activity!
-          </div>
-        )}
       </div>
     );
   };

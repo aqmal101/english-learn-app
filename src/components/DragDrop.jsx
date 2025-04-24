@@ -212,7 +212,7 @@ const DragDropComponent = ({
       </div>
 
       {/* Word bank at the bottom */}
-      <div className="mt-2 p-2 bg-amber-100 rounded-lg">
+      <div className="mt-2 p-2 bg-white border border-dashed border-amber-600 rounded-lg">
         <div className="flex flex-wrap gap-2 justify-center">
           {words.map((word, index) => (
             <div
@@ -228,7 +228,7 @@ const DragDropComponent = ({
       </div>
       {feedback && (
         <div
-          className={`mt-2 p-1 rounded-md text-center font-medium text-sm ${
+          className={`mt-2 p-1 absolute right-1/4 left-1/4 rounded-md text-center font-medium text-sm ${
             feedback.includes("Correct") || feedback.includes("Amazing")
               ? "bg-green-100 text-green-800"
               : "bg-red-100 text-red-800"
