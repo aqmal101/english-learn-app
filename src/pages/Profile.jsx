@@ -27,8 +27,8 @@ const ProfilePage = () => {
           name: profileData.name || "",
           username: profileData.username || "",
           class: profileData.class || "N/A",
-          teacher: "N/A", // You can replace this if your API includes teacher info later
-          score: 100, // Replace with real score if available
+          teacher: "N/A",
+          score: 100,
         });
       } catch (error) {
         console.error("Failed to fetch profile:", error);
@@ -39,8 +39,8 @@ const ProfilePage = () => {
   }, []);
 
   return (
-    <div className="relative bg-[url('/img/background/Landscape2.png')] bg-cover bg-center bg-no-repeat w-screen h-screen">
-      <div className="absolute space-y-6 p-5 top-20 left-20 right-20 bottom-20 z-10 flex flex-col justify-center items-center rounded-2xl bg-white/50">
+    <div className="relative bg-[url('/img/background/Landscape.png')] bg-cover bg-center bg-no-repeat w-screen h-screen">
+      <div className="absolute space-y-6 p-5 top-16 bottom-16 left-24 right-24 z-10 flex flex-col justify-center items-center rounded-2xl bg-white/50">
         <div className="font-cherry font-bold text-3xl text-white rounded-full bg-blue-500 py-3 px-10 shadow-lg">
           Profile Page
         </div>
@@ -68,43 +68,31 @@ const ProfilePage = () => {
             <div className="grid grid-cols-2 gap-4 mb-6">
               <div>
                 <label className="font-semibold text-purple-800">Name :</label>
-                <input
-                  type="text"
-                  className="w-full p-2 rounded-lg mt-1 bg-white"
-                  value={userInfo.name}
-                  readOnly
-                />
+                <div className="w-full p-2 rounded-lg mt-1 bg-white">
+                  {userInfo.name}
+                </div>
               </div>
               <div>
                 <label className="font-semibold text-purple-800">
                   Username :
                 </label>
-                <input
-                  type="text"
-                  className="w-full p-2 rounded-lg mt-1 bg-white"
-                  value={userInfo.username}
-                  readOnly
-                />
+                <div className="w-full p-2 rounded-lg mt-1 bg-white">
+                  {userInfo.username}
+                </div>
               </div>
               <div>
                 <label className="font-semibold text-purple-800">Class :</label>
-                <input
-                  type="text"
-                  className="w-full p-2 rounded-lg mt-1 bg-white"
-                  value={userInfo.class}
-                  readOnly
-                />
+                <div className="w-full p-2 rounded-lg mt-1 bg-white">
+                  {userInfo.class}
+                </div>
               </div>
               <div>
                 <label className="font-semibold text-purple-800">
                   Teacher :
                 </label>
-                <input
-                  type="text"
-                  className="w-full p-2 rounded-lg mt-1 bg-white"
-                  value={userInfo.teacher}
-                  readOnly
-                />
+                <div className="w-full p-2 rounded-lg mt-1 bg-white">
+                  {userInfo.teacher}
+                </div>
               </div>
             </div>
 

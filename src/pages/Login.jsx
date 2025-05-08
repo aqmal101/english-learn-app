@@ -60,7 +60,7 @@ const LoginPage = () => {
   };
 
   return (
-    <div className="h-screen flex flex-col justify-center items-center bg-[url('/img/background/Landscape2.png')] bg-cover bg-center bg-no-repeat bg-cover">
+    <div className="h-screen flex flex-col justify-center items-center bg-[url('/img/background/Landscape.png')] bg-cover bg-center bg-no-repeat">
       <div className="w-[90%] max-w-md p-8 bg-white/90 rounded-2xl shadow-md flex flex-col items-center gap-6">
         <h1 className="text-4xl font-bold text-purple-900">Login {role}</h1>
         <Alert

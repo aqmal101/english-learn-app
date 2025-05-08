@@ -12,14 +12,14 @@ const BookCover = ({ image, title, isLocked, isLoading, onClick }) => {
       onClick={isLocked ? undefined : onClick}
     >
       <div
-        className={`w-fit h-fit cursor pointer relative hover:shadow-2xl shadow ease-in-out${
+        className={`w-fit h-fit cursor pointer relative ease-in-out${
           !isLocked ? "cursor-pointer" : "cursor-not-allowed"
         } `}
       >
         <img
           src={image}
           alt={title}
-          className="w-72 h-48 object-cover hover:border-4 ease-in-out transition-all duration-300 border-amber-400 rounded-3xl relative shadow-lg"
+          className="w-72 h-48 object-cover hover:border-4 ease-in-out transition-all duration-100 border-amber-400 rounded-3xl relative shadow-lg"
         />
         {isLoading && (
           <div className="absolute inset-0 flex justify-center items-center bg-white/60 rounded-lg">
@@ -53,7 +53,7 @@ const BooksPage = () => {
     }, 800);
   };
   return (
-    <div className="relative bg-[url('/img/background/Landscape2.png')] bg-cover bg-center bg-no-repeat w-screen h-screen">
+    <div className="relative bg-[url('/img/background/Landscape.png')] bg-cover bg-center bg-no-repeat w-screen h-screen">
       {/* Overlay putih semi-transparan */}
       <div className="absolute top-20 left-20 right-20 bottom-20 z-10 flex flex-col justify-center items-center rounded-2xl bg-white/50">
         <div

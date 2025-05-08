@@ -1,4 +1,5 @@
-import { Routes, Route } from "react-router-dom";
+// routes/AppRoutes.jsx
+import { createBrowserRouter } from "react-router-dom";
 import Home from "../pages/Home";
 import Books from "../pages/Books";
 import Games from "../pages/Games";
@@ -8,21 +9,22 @@ import StoryBook from "../pages/BookDetail";
 import LandingPage from "../pages/Landing";
 import LoginPage from "../pages/Login";
 import ProfilePage from "../pages/Profile";
+import App from "../App";
 
-const AppRoutes = () => {
-  return (
-    <Routes>
-      <Route path="/" element={<LandingPage />} />
-      <Route path="/home" element={<Home />} />
-      <Route path="/books" element={<Books />} />
-      <Route path="/books/:id" element={<StoryBook />} />
-      <Route path="/games" element={<Games />} />
-      <Route path="/dashboard" element={<Dashboard />} />
-      <Route path="/login" element={<LoginPage />} />
-      <Route path="/profile" element={<ProfilePage />} />
-      <Route path="*" element={<NotFound />} />
-    </Routes>
-  );
-};
-
-export default AppRoutes;
+export const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <App />,
+    children: [
+      { path: "", element: <LandingPage /> },
+      { path: "home", element: <Home /> },
+      { path: "books", element: <Books /> },
+      { path: "books/:id", element: <StoryBook /> },
+      { path: "games", element: <Games /> },
+      { path: "dashboard", element: <Dashboard /> },
+      { path: "login", element: <LoginPage /> },
+      { path: "profile", element: <ProfilePage /> },
+      { path: "*", element: <NotFound /> },
+    ],
+  },
+]);

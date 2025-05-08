@@ -1,6 +1,6 @@
-@import "tailwindcss";
 @import url('https://fonts.googleapis.com/css2?family=Cherry+Bomb+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap');
+@import "tailwindcss";
 
 .font-cartoon {
     font-family: "Fredoka", sans-serif;
