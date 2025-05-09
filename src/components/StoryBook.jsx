@@ -286,7 +286,7 @@ export default function BookStory() {
             className={`flex items-center rounded-full w-fit px-3 ${
               isFirstSpread
                 ? "text-transparent"
-                : "text-white bg-amber-500 hover:bg-amber-600"
+                : "text-white bg-amber-500 hover:bg-amber-600 py-2"
             }`}
           >
             <ChevronLeft />
@@ -319,12 +319,12 @@ export default function BookStory() {
             className={`flex items-center rounded-full px-3 ${
               isLastSpread
                 ? "text-transparent"
-                : "text-white bg-amber-500 hover:bg-amber-600"
+                : "text-white bg-amber-500 hover:bg-amber-600 py-2"
             }`}
           >
             <span>Next</span>
             <ChevronRight />
-          </button>
+           </button>
         </div>
       </div>
     </div>
