@@ -11,14 +11,14 @@
       "image": "/img/books/book1/cover.png"
     },
     {
-      "id": 2,
-      "title": "To Kill a Mockingbird",
-      "author": "Harper Lee",
-      "year": 1960,
+      "id": "06d7e5fe-e4f1-4c0a-b807-090d46033502",
+      "title": "The Numbers in the Village of Ten Hills",
+      "author": "Miss Ani",
+      "year": 2025,
       "genre": "Fiction",
-      "focus": "Alphabet",
-      "status": "locked",
-      "image": "https://picsum.photos/seed/picsum/200/300"
+      "focus": "Number",
+      "status": "available",
+      "image": "/img/books/book2/cover.png"
     },
     {
       "id": 3,
