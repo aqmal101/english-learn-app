@@ -13,6 +13,7 @@
     "content": "Once upon a time, in a beautiful rice-growing village in Indonesia, there was a kind and gentle goddess named Dewi Sri. She was loved by everyone because she taught people how to plant rice and take care of the land.",
     "image": "/img/books/book1/page1.png",
     "audio": "/story-audio-page1.mp3",
+    "intruction": "Drag and drop the words to the correct places.",
     "hasActivity": true,
     "dragDropWords": [
       "Dewi Sri",
@@ -80,6 +81,7 @@
     "image": "/img/books/book1/page2.png",
     "audio": "/story-audio-page2.mp3",
     "hasInteraction": true,
+    "intruction": "Tap the children in the rice field.",
     "interactionType": "tapping",
     "interactionPrompt": "How many children are there around the rice field?",
     "tapAreas": [

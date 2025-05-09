@@ -1,7 +1,13 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import { ChevronLeft, ChevronRight, Home, LibraryBig } from "lucide-react";
+import {
+  ChevronLeft,
+  ChevronRight,
+  Home,
+  Info,
+  LibraryBig,
+} from "lucide-react";
 import DragDropComponent from "./DragDrop";
 import TappingImage from "./TappingImage";
 import TappingElement from "./TappingElement";
@@ -12,6 +18,7 @@ export default function BookStory() {
   const [currentSpreadIndex, setCurrentSpreadIndex] = useState(0);
   const [completedActivities, setCompletedActivities] = useState({});
   const [tappedElements, setTappedElements] = useState({});
+  const [isInfoOpen, setIsInfoOpen] = useState(false);
 
   const [tappedAreas, setTappedAreas] = useState({});
   const [showHints, setShowHints] = useState(false);
@@ -139,9 +146,22 @@ export default function BookStory() {
       <div className="flex flex-1 flex-col p-6 w-full h-full overflow-hidden">
         {/* Page Number Badge */}
         {page.pageNumber && (
-          <div className="absolute top-10 left-10 bg-amber-500 h-7 w-7 rounded-full flex justify-center items-center font-medium text-white text-sm z-10">
-            {page.pageNumber}
-          </div>
+          <>
+            <div className="absolute top-10 left-10 bg-amber-500 h-7 w-7 rounded-full flex justify-center items-center font-medium text-white text-sm z-10">
+              {page.pageNumber}
+            </div>
+            {page.intruction && page.intruction.length > 0 && (
+              <div
+                onClick={() => setIsInfoOpen(!isInfoOpen)}
+                className={`absolute space-x-2 top-10 right-10 bg-amber-500 h-7 w-fit  ${
+                  isInfoOpen ? "px-2" : "px-1"
+                } rounded-2xl flex justify-center items-center transition-all duration-100 ease-in-out font-medium text-white text-sm z-10`}
+              >
+                {isInfoOpen && <p>{page.intruction}</p>}
+                <Info />
+              </div>
+            )}
+          </>
         )}
 
         {/* Main content area - take most of the space but leave room for text */}
@@ -211,7 +231,7 @@ export default function BookStory() {
           {(page.hasActivity ||
             (page.hasInteraction && page.interactionType === "tapping")) &&
             isActivityCompleted && (
-              <div className="absolute mt-2 p-2 z-10 bottom-0 right-1/4 left-1/4 bg-green-100 text-green-800 rounded text-center">
+              <div className="absolute mt-2 p-2 z-10 bottom-1 right-1/4 left-1/4 bg-green-100 text-green-800 rounded text-center">
                 Great job! You've completed this activity!
               </div>
             )}
@@ -263,20 +283,20 @@ export default function BookStory() {
           <button
             onClick={goToPrevSpread}
             disabled={isFirstSpread}
-            className={`flex items-center rounded-full p-2 ${
+            className={`flex items-center rounded-full w-fit px-3 ${
               isFirstSpread
                 ? "text-transparent"
-                : "text-amber-600 hover:bg-amber-100"
+                : "text-white bg-amber-500 hover:bg-amber-600"
             }`}
           >
-            <ChevronLeft className="h-6 w-6" />
-            <span className="ml-1">Previous</span>
+            <ChevronLeft />
+            <span>Previous</span>
           </button>
 
           <div className="flex items-center flex-row space-x-4">
             <button
               onClick={handleRouteHome}
-              className="w-fit h-fit flex flex-row px-4 py-2 bg-amber-500 hover:bg-amber-600 text-white rounded-full cursor-pointer"
+              className="w-fit h-fit flex flex-row px-4 py-2 text-amber-600 border-2 border-amber-600 rounded-full cursor-pointer"
             >
               <Home /> Go Home
             </button>
@@ -287,7 +307,7 @@ export default function BookStory() {
             </span>
             <button
               onClick={handleRouteLibrary}
-              className="w-fit h-fit flex flex-row px-4 py-2 bg-amber-500 hover:bg-amber-600 text-white rounded-full cursor-pointer"
+              className="w-fit h-fit flex flex-row px-4 py-2 text-amber-600 border-2 border-amber-600 rounded-full cursor-pointer"
             >
               <LibraryBig /> All Books
             </button>
@@ -296,14 +316,14 @@ export default function BookStory() {
           <button
             onClick={goToNextSpread}
             disabled={isLastSpread}
-            className={`flex items-center rounded-full p-2 ${
+            className={`flex items-center rounded-full px-3 ${
               isLastSpread
                 ? "text-transparent"
-                : "text-amber-600 hover:bg-amber-100"
+                : "text-white bg-amber-500 hover:bg-amber-600"
             }`}
           >
-            <span className="mr-1">Next</span>
-            <ChevronRight className="h-6 w-6" />
+            <span>Next</span>
+            <ChevronRight />
           </button>
         </div>
       </div>

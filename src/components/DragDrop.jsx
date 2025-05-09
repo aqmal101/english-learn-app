@@ -48,11 +48,11 @@ const DragDropComponent = ({
       element.setAttribute("data-label", zone.label);
 
       // Add label for debugging (can be removed in production)
-      const label = document.createElement("span");
-      label.textContent = zone.label;
-      label.style.color = "rgba(255, 255, 255, 0.7)";
-      label.style.fontSize = "12px";
-      element.appendChild(label);
+      // const label = document.createElement("span");
+      // label.textContent = zone.label;
+      // label.style.color = "rgba(255, 255, 255, 0.7)";
+      // label.style.fontSize = "12px";
+      // element.appendChild(label);
 
       containerRef.current.appendChild(element);
       dropZonesRef.current.push(element);
@@ -113,7 +113,7 @@ const DragDropComponent = ({
           const correctWord = dropzoneElement.getAttribute("data-label");
 
           // Debug info (can be removed in production)
-          console.log("Dropped:", draggableWord, "onto", correctWord);
+          // console.log("Dropped:", draggableWord, "onto", correctWord);
 
           if (draggableWord.toLowerCase() === correctWord.toLowerCase()) {
             // Position the draggable in the center of the dropzone
