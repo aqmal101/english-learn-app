@@ -6,6 +6,7 @@ import TextButton from "../components/TextButton";
 import Alert from "../components/Alert";
 import { RefreshCcw } from "lucide-react";
 import Tooltip from "../components/Tooltip";
+import api from "../lib/api";
 
 const LoginPage = () => {
   const [role, setRole] = useState("student");
@@ -33,7 +34,9 @@ const LoginPage = () => {
 
   const onSubmit = async (data) => {
     try {
-      const response = await axios.post(`${baseURL}/api/v1/auth/login`, {
+      await api.get('/sanctum/csrf-cookie')
+
+      const response = await api.post('/api/v1/auth/login', {
         username: data.username,
         password: data.password,
       });
