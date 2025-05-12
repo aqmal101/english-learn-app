@@ -11,7 +11,7 @@ import {
 import DragDropComponent from "./DragDrop";
 import TappingImage from "./TappingImage";
 import TappingElement from "./TappingElement";
-import storyBookData from "../dummy/bookData1.json";
+import storyBookData from "../dummy/bookData2.json";
 import { useNavigate } from "react-router-dom";
 
 export default function BookStory() {
@@ -22,6 +22,8 @@ export default function BookStory() {
 
   const [tappedAreas, setTappedAreas] = useState({});
   const [showHints, setShowHints] = useState(false);
+
+  console.log(storyBookData);
 
   const navigate = useNavigate();
 
@@ -136,6 +138,96 @@ export default function BookStory() {
     }));
   };
 
+  const VocabTooltip = ({ word, definition, className = "" }) => {
+    const [isTooltipVisible, setIsTooltipVisible] = useState(false);
+
+    return (
+      <span
+        className={`relative inline-block group ${className}`}
+        onMouseEnter={() => setIsTooltipVisible(true)}
+        onMouseLeave={() => setIsTooltipVisible(false)}
+        onClick={() => setIsTooltipVisible(!isTooltipVisible)}
+      >
+        <span className="font-semibold cursor-help">{word}</span>
+        {isTooltipVisible && (
+          <div
+            className="absolute z-10 bottom-full left-1/2 transform -translate-x-1/2 
+          bg-white border border-gray-200 text-black text-sm 
+          rounded-lg shadow-lg p-2 
+          min-w-[200px] 
+          mb-2 
+          animate-fade-in
+          text-center"
+          >
+            <div
+              className="absolute bottom-[-10px] left-1/2 transform -translate-x-1/2 
+            w-0 h-0 
+            border-l-8 border-l-transparent 
+            border-r-8 border-r-transparent 
+            border-t-8 border-gray-200"
+            />
+            {definition}
+          </div>
+        )}
+      </span>
+    );
+  };
+
+  const PageContent = ({ content }) => {
+    if (typeof content === "string") {
+      return (
+        <div className="bg-amber-500/20 p-4 rounded-lg">
+          <p>{content}</p>
+        </div>
+      );
+    }
+
+    // Check if content is an array
+    if (!Array.isArray(content)) {
+      console.error("Invalid content format:", content);
+      return null;
+    }
+    return (
+      <div className="bg-amber-500/20 p-4 rounded-lg">
+        <p>
+          {content.map((part, index) => {
+            // Handle vocabulary words that can also be bold
+            if (part.vocab) {
+              return (
+                <VocabTooltip
+                  key={index}
+                  word={part.text}
+                  definition={part.definition}
+                  className={
+                    part.bold
+                      ? "font-bolder text-orange-600"
+                      : "text-blue-600 underline"
+                  }
+                />
+              );
+            }
+
+            // Handle bold text that is not a vocabulary word
+            if (part.bold) {
+              return (
+                <strong key={index} className="font-bold text-orange-600">
+                  {part.text}
+                </strong>
+              );
+            }
+
+            // Regular text
+            return (
+              <span className="text-justify" key={index}>
+                {part.text}
+              </span>
+            );
+          })}
+        </p>
+      </div>
+    );
+  };
+
   const renderPage = (page) => {
     if (!page) return <div className="flex-1 bg-amber-50"></div>;
 
@@ -239,7 +331,7 @@ export default function BookStory() {
 
         {/* Text Overlay at bottom */}
         <div className="mt-4 bg-amber-500/20 p-3 rounded">
-          <p className="text-sm leading-relaxed">{page.content}</p>
+          <PageContent content={page.content} />{" "}
         </div>
       </div>
     );
@@ -324,7 +416,7 @@ export default function BookStory() {
           >
             <span>Next</span>
             <ChevronRight />
-           </button>
+          </button>
         </div>
       </div>
     </div>
