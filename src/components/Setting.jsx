@@ -13,6 +13,7 @@ import { useNavigate } from "react-router-dom";
 // eslint-disable-next-line no-unused-vars
 import { AnimatePresence, motion } from "framer-motion";
 import Alert from "./Alert";
+import api from "../lib/api";
 
 const MenuItem = ({ icon, label, onClick, className = "" }) => (
   <div
@@ -50,15 +51,29 @@ const Settings = ({ className }) => {
     setRole(userData?.role);
   }, []);
 
-  const handleLogout = () => {
-    localStorage.removeItem("userInfo");
-    localStorage.removeItem("authToken");
-    localStorage.removeItem("userInfo");
-    showAlert("Logout sucessfuly", "success");
+  const handleLogout = async () => {
+    try {
+      const authToken = localStorage.getItem("authToken");
 
-    setTimeout(() => {
-      navigate("/login");
-    }, 1000);
+      await api.get("/sanctum/csrf-cookie");
+      await api.post("/api/v1/auth/logout", null, {
+        headers: {
+          Authorization: `Bearer ${authToken}`,
+        },
+      });
+
+      localStorage.removeItem("userInfo");
+      localStorage.removeItem("authToken");
+      localStorage.removeItem("userInfo");
+      showAlert("Logout sucessfuly", "success");
+
+      setTimeout(() => {
+        navigate("/login");
+      }, 1000);
+    } catch (error) {
+      console.error("Logout failed:", error);
+      showAlert("Logout failed. Please try again.", "error");
+    }
   };
 
   return (
