@@ -11,10 +11,10 @@ import {
 import DragDropComponent from "./DragDrop";
 import TappingImage from "./TappingImage";
 import TappingElement from "./TappingElement";
-import storyBookData from "../dummy/bookData2.json";
 import { useNavigate } from "react-router-dom";
 
-export default function BookStory() {
+export default function BookStory({ storyBookData }) {
+  console.log("BookStory", storyBookData);
   const [currentSpreadIndex, setCurrentSpreadIndex] = useState(0);
   const [completedActivities, setCompletedActivities] = useState({});
   const [tappedElements, setTappedElements] = useState({});
@@ -22,8 +22,6 @@ export default function BookStory() {
 
   const [tappedAreas, setTappedAreas] = useState({});
   const [showHints, setShowHints] = useState(false);
-
-  console.log(storyBookData);
 
   const navigate = useNavigate();
 
@@ -173,10 +171,11 @@ export default function BookStory() {
     );
   };
 
+  // Text Sections
   const PageContent = ({ content }) => {
     if (typeof content === "string") {
       return (
-        <div className="bg-amber-500/20 p-4 rounded-lg">
+        <div className="bg-transparent rounded-lg">
           <p>{content}</p>
         </div>
       );
@@ -188,7 +187,7 @@ export default function BookStory() {
       return null;
     }
     return (
-      <div className="bg-amber-500/20 p-4 rounded-lg">
+      <div className="bg-transparent rounded-lg">
         <p>
           {content.map((part, index) => {
             // Handle vocabulary words that can also be bold
@@ -227,6 +226,7 @@ export default function BookStory() {
       </div>
     );
   };
+  // Text Sections
 
   const renderPage = (page) => {
     if (!page) return <div className="flex-1 bg-amber-50"></div>;
@@ -310,7 +310,7 @@ export default function BookStory() {
               />
             </div>
           ) : (
-            <div className="relative w-full h-full rounded-lg overflow-hidden shadow-md">
+            <div className="relative w-full h-full bg-amber-100 rounded-lg overflow-hidden shadow-md">
               <img
                 src={page.image || "/api/placeholder/600/400"}
                 alt={`Illustration for page ${page.pageNumber}`}

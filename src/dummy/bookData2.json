@@ -1,384 +1,956 @@
-[
-  {
-    "id": "cover",
-    "type": "cover",
-    "title": "The Numbers in The Village of Ten Hills",
-    "author": "Miss Ani",
-    "coverImage": "/img/books/book2/cover.png",
-    "audio": "/story-audio-intro.mp3"
-  },
-  {
-    "id": "page-1",
-    "pageNumber": 1,
-    "image": "/img/books/book2/page1.png",
-    "audio": "/story-audio-page1.mp3",
-    "content": [
-      {
-        "text": "Once upon a time",
-        "vocab": true,
-        "definition": "Awal dari cerita dongeng"
-      },
-      { "text": ", in a peaceful ", "vocab": false },
-      {
-        "text": "village",
-        "vocab": true,
-        "definition": "Desa; tempat orang tinggal"
-      },
-      { "text": " called ", "vocab": false },
-      {
-        "text": "Ten Hills",
-        "vocab": true,
-        "definition": "Nama desa dalam cerita ini"
-      },
-      {
-        "text": ", there were ",
-        "vocab": false
-      },
-      {
-        "text": " ten ",
-        "vocab": false,
-        "bold": true
-      },
-      {
-        "text": " hills where each hill was home to a magical number. The numbers lived together and ",
-        "vocab": false
-      },
-      {
-        "text": "helped",
-        "vocab": true,
-        "definition": "Membantu"
-      },
-      { "text": " the ", "vocab": false },
-      {
-        "text": "villagers",
-        "vocab": true,
-        "definition": "Penduduk desa"
-      },
-      { "text": " with their ", "vocab": false },
-      {
-        "text": "daily tasks",
-        "vocab": true,
-        "definition": "Tugas harian"
-      },
-      { "text": ". ", "vocab": false },
-      {
-        "text": "One morning",
-        "vocab": true,
-        "definition": "Suatu pagi"
-      },
-      { "text": ", ", "vocab": false },
-      {
-        "text": "a little boy",
-        "vocab": true,
-        "definition": "Seorang anak laki-laki kecil"
-      },
-      { "text": " ", "vocab": false },
-      {
-        "text": "named",
-        "vocab": true,
-        "definition": "Bernama"
-      },
-      { "text": " Eza was ", "vocab": false },
-      {
-        "text": "playing",
-        "vocab": true,
-        "definition": "Sedang bermain"
-      },
-      { "text": " ", "vocab": false },
-      {
-        "text": "near",
-        "vocab": true,
-        "definition": "Dekat"
-      },
-      { "text": " the hills when he ", "vocab": false },
-      {
-        "text": "heard",
-        "vocab": true,
-        "definition": "Mendengar"
-      },
-      { "text": " ", "vocab": false },
-      {
-        "text": "a soft voice",
-        "vocab": true,
-        "definition": "Suara lembut"
-      },
-      { "text": " ", "vocab": false },
-      {
-        "text": "calling out",
-        "vocab": true,
-        "definition": "Memanggil"
-      },
-      { "text": " to him.", "vocab": false }
-    ]
-  },
-  {
-    "id": "page-2",
-    "pageNumber": 2,
-    "content": [
-      {
-        "text": "“Hello, Eza!” ",
-        "vocab": false
-      },
-      {
-        "text": "said the voice",
-        "vocab": true,
-        "definition": "kata suara itu"
-      },
-      { "text": ". Eza ", "vocab": false },
-      {
-        "text": "looked up",
-        "vocab": true,
-        "definition": "mendongak / melihat ke atas"
-      },
-      { "text": " to see Number ", "vocab": false },
-      { "text": " 1 ", "vocab": false, "bold": true },
-      {
-        "text": "standing tall",
-        "vocab": true,
-        "definition": "berdiri tegak"
-      },
-      {
-        "text": " on ",
-        "vocab": false
-      },
-      {
-        "text": "the first hill",
-        "vocab": true,
-        "definition": "bukit pertama"
-      },
-      { "text": ". “I am Number ", "vocab": false },
-      { "text": " 1.", "vocab": false, "bold": true },
-      { "text": " I love ", "vocab": false },
-      {
-        "text": "being first in line",
-        "vocab": true,
-        "definition": "menjadi yang pertama dalam antrean"
-      },
-      {
-        "text": "! Can you find one rooster on my hill?” Eza ",
-        "vocab": false
-      },
-      {
-        "text": "looked around",
-        "vocab": true,
-        "definition": "melihat sekeliling"
-      },
-      { "text": " and ", "vocab": false },
-      {
-        "text": "found",
-        "vocab": true,
-        "definition": "menemukan"
-      },
-      { "text": " ", "vocab": false },
-      {
-        "text": "a bright red rooster",
-        "vocab": true,
-        "definition": "seekor ayam jantan merah cerah"
-      },
-      { "text": ". “", "vocab": false },
-      {
-        "text": "There it is!",
-        "vocab": true,
-        "definition": "Itu dia!"
-      },
-      { "text": " ", "vocab": false },
-      {
-        "text": "One",
-        "vocab": true,
-        "definition": "Satu",
-        "bold": true
-      },
-      {
-        "text": " rooster!",
-        "vocab": true,
-        "definition": "Ayam jantan"
-      },
-      { "text": "” he ", "vocab": false },
-      {
-        "text": "exclaimed",
-        "vocab": true,
-        "definition": "berseru / berkata dengan semangat"
-      },
-      { "text": ".", "vocab": false }
-    ],
-    "image": "/img/books/book2/page2.gif"
-  },
-  {
-    "id": "page-3",
-    "pageNumber": 3,
-    "content": [
-      { "text": "As Eza ", "vocab": false },
-      {
-        "text": "walked",
-        "vocab": true,
-        "definition": "Berjalan"
-      },
-      { "text": " to ", "vocab": false },
-      {
-        "text": "the second hill",
-        "vocab": true,
-        "definition": "Bukit kedua"
-      },
-      { "text": ", ", "vocab": false },
-      {
-        "text": "Number 2 ",
-        "vocab": false,
-        "bold": true
-      },
+{
+  "id": 2,
+  "pages": [
+    {
+      "id": "cover",
+      "type": "cover",
+      "title": "The Numbers in The Village of Ten Hills",
+      "author": "Miss Ani",
+      "coverImage": "/img/books/book2/cover.png",
+      "audio": "/story-audio-intro.mp3"
+    },
+    {
+      "id": "page-1",
+      "pageNumber": 1,
+      "image": "/img/books/book2/page1.png",
+      "audio": "/story-audio-page1.mp3",
+      "content": [
+        {
+          "text": "Once upon a time",
+          "vocab": true,
+          "definition": "Awal dari cerita dongeng"
+        },
+        { "text": ", in a peaceful ", "vocab": false },
+        {
+          "text": "village",
+          "vocab": true,
+          "definition": "Desa; tempat orang tinggal"
+        },
+        { "text": " called ", "vocab": false },
+        {
+          "text": "Ten Hills",
+          "vocab": true,
+          "definition": "Nama desa dalam cerita ini"
+        },
+        {
+          "text": ", there were ",
+          "vocab": false
+        },
+        {
+          "text": " ten ",
+          "vocab": false,
+          "bold": true
+        },
+        {
+          "text": " hills where each hill was home to a magical number. The numbers lived together and ",
+          "vocab": false
+        },
+        {
+          "text": "helped",
+          "vocab": true,
+          "definition": "Membantu"
+        },
+        { "text": " the ", "vocab": false },
+        {
+          "text": "villagers",
+          "vocab": true,
+          "definition": "Penduduk desa"
+        },
+        { "text": " with their ", "vocab": false },
+        {
+          "text": "daily tasks",
+          "vocab": true,
+          "definition": "Tugas harian"
+        },
+        { "text": ". ", "vocab": false },
+        {
+          "text": "One morning",
+          "vocab": true,
+          "definition": "Suatu pagi"
+        },
+        { "text": ", ", "vocab": false },
+        {
+          "text": "a little boy",
+          "vocab": true,
+          "definition": "Seorang anak laki-laki kecil"
+        },
+        { "text": " ", "vocab": false },
+        {
+          "text": "named",
+          "vocab": true,
+          "definition": "Bernama"
+        },
+        { "text": " Eza was ", "vocab": false },
+        {
+          "text": "playing",
+          "vocab": true,
+          "definition": "Sedang bermain"
+        },
+        { "text": " ", "vocab": false },
+        {
+          "text": "near",
+          "vocab": true,
+          "definition": "Dekat"
+        },
+        { "text": " the hills when he ", "vocab": false },
+        {
+          "text": "heard",
+          "vocab": true,
+          "definition": "Mendengar"
+        },
+        { "text": " ", "vocab": false },
+        {
+          "text": "a soft voice",
+          "vocab": true,
+          "definition": "Suara lembut"
+        },
+        { "text": " ", "vocab": false },
+        {
+          "text": "calling out",
+          "vocab": true,
+          "definition": "Memanggil"
+        },
+        { "text": " to him.", "vocab": false }
+      ]
+    },
+    {
+      "id": "page-2",
+      "pageNumber": 2,
+      "hasInteraction": true,
+      "instruction": "Tap the rooster",
+      "content": [
+        {
+          "text": "“Hello, Eza!” ",
+          "vocab": false
+        },
+        {
+          "text": "said the voice",
+          "vocab": true,
+          "definition": "kata suara itu"
+        },
+        { "text": ". Eza ", "vocab": false },
+        {
+          "text": "looked up",
+          "vocab": true,
+          "definition": "mendongak / melihat ke atas"
+        },
+        { "text": " to see Number ", "vocab": false },
+        { "text": " 1 ", "vocab": false, "bold": true },
+        {
+          "text": "standing tall",
+          "vocab": true,
+          "definition": "berdiri tegak"
+        },
+        {
+          "text": " on ",
+          "vocab": false
+        },
+        {
+          "text": "the first hill",
+          "vocab": true,
+          "definition": "bukit pertama"
+        },
+        { "text": ". “I am Number ", "vocab": false },
+        { "text": " 1.", "vocab": false, "bold": true },
+        { "text": " I love ", "vocab": false },
+        {
+          "text": "being first in line",
+          "vocab": true,
+          "definition": "menjadi yang pertama dalam antrean"
+        },
+        {
+          "text": "! Can you find one rooster on my hill?” Eza ",
+          "vocab": false
+        },
+        {
+          "text": "looked around",
+          "vocab": true,
+          "definition": "melihat sekeliling"
+        },
+        { "text": " and ", "vocab": false },
+        {
+          "text": "found",
+          "vocab": true,
+          "definition": "menemukan"
+        },
+        { "text": " ", "vocab": false },
+        {
+          "text": "a bright red rooster",
+          "vocab": true,
+          "definition": "seekor ayam jantan merah cerah"
+        },
+        { "text": ". “", "vocab": false },
+        {
+          "text": "There it is!",
+          "vocab": true,
+          "definition": "Itu dia!"
+        },
+        { "text": " ", "vocab": false },
+        {
+          "text": "One",
+          "vocab": true,
+          "definition": "Satu",
+          "bold": true
+        },
+        {
+          "text": " rooster!",
+          "vocab": true,
+          "definition": "Ayam jantan"
+        },
+        { "text": "” he ", "vocab": false },
+        {
+          "text": "exclaimed",
+          "vocab": true,
+          "definition": "berseru / berkata dengan semangat"
+        },
+        { "text": ".", "vocab": false }
+      ],
+      "image": "/img/books/book2/page2.gif"
+    },
+    {
+      "id": "page-3",
+      "pageNumber": 3,
+      "content": [
+        { "text": "As Eza ", "vocab": false },
+        {
+          "text": "walked",
+          "vocab": true,
+          "definition": "Berjalan"
+        },
+        { "text": " to ", "vocab": false },
+        {
+          "text": "the second hill",
+          "vocab": true,
+          "definition": "Bukit kedua"
+        },
+        { "text": ", ", "vocab": false },
+        {
+          "text": "Number 2 ",
+          "vocab": false,
+          "bold": true
+        },
 
-      {
-        "text": " appeared",
-        "vocab": true,
-        "definition": "Muncul"
-      },
-      { "text": ", ", "vocab": false },
+        {
+          "text": " appeared",
+          "vocab": true,
+          "definition": "Muncul"
+        },
+        { "text": ", ", "vocab": false },
 
-      {
-        "text": "holding",
-        "vocab": true,
-        "definition": "Memegang"
-      },
-      {
-        "text": " two shiny coconuts",
-        "vocab": true,
-        "definition": "Dua kelapa yang mengkilap"
-      },
-      { "text": ".\n“", "vocab": false },
-      {
-        "text": "I am Number 2",
-        "vocab": false,
-        "bold": true
-      },
-      { "text": ",” it said with ", "vocab": false },
-      {
-        "text": "a smile",
-        "vocab": true,
-        "definition": "Senyum"
-      },
-      { "text": ". “I like ", "vocab": false },
-      {
-        "text": "things in pairs",
-        "vocab": true,
-        "definition": "Hal-hal yang berpasangan"
-      },
-      { "text": ". Can you ", "vocab": false },
-      {
-        "text": "find",
-        "vocab": true,
-        "definition": "Menemukan"
-      },
-      { "text": " ", "vocab": false },
-      {
-        "text": "two ducks",
-        "vocab": true,
-        "definition": "Dua bebek"
-      },
-      { "text": " ", "vocab": false },
-      {
-        "text": "swimming",
-        "vocab": true,
-        "definition": "Berenang"
-      },
-      {
-        "text": " in the pond?”\nEza laughed as he spotted the ducks. “",
-        "vocab": false
-      },
-      {
-        "text": "One",
-        "vocab": false,
-        "bold": true
-      },
-      { "text": ", ", "vocab": false },
-      {
-        "text": "two",
-        "vocab": false,
-        "bold": true
-      },
-      { "text": "! ", "vocab": false },
-      {
-        "text": "Two",
-        "vocab": false,
-        "bold": true
-      },
-      { "text": " ducks!”", "vocab": false }
-    ],
-    "image": "/img/books/book2/page3.gif"
-  },
-  {
-    "id": "page-3",
-    "pageNumber": 4,
-    "content": [
-      { "text": "On ", "vocab": false },
-      {
-        "text": "the third hill",
-        "vocab": true,
-        "definition": "Bukit ketiga"
-      },
-      { "text": ", ", "vocab": false },
-      {
-        "text": "Number 3",
-        "bold": true
-      },
-      { "text": " was playing with ", "vocab": false },
-      {
-        "text": "three",
-        "vocab": true,
-        "definition": "Tiga"
-      },
-      {
-        "text": " ",
-        "vocab": false
-      },
-      {
-        "text": " colourful",
-        "vocab": true,
-        "definition": "warna-warni"
-      },
-      {
-        "text": " ",
-        "vocab": false
-      },
-      {
-        "text": "kites",
-        "vocab": true,
-        "definition": "layang-layang"
-      },
-      { "text": ".\n“Help me ", "vocab": false },
-      {
-        "text": "count",
-        "vocab": true,
-        "definition": "Menghitung"
-      },
-      { "text": " my kites, Eza!” ", "vocab": false },
-      {
-        "text": "Number 3",
-        "bold": true
-      },
-      { "text": " said.\nEza pointed to each kite: “", "vocab": false },
-      {
-        "text": "One",
-        "bold": true
-      },
-      { "text": ", ", "vocab": false },
-      {
-        "text": "two",
-        "bold": true
-      },
-      { "text": ", ", "vocab": false },
-      {
-        "text": "three",
-        "bold": true
-      },
-      { "text": "!”", "vocab": false }
-    ],
-    "image": "/img/books/book2/page4.gif"
-  },
+        {
+          "text": "holding",
+          "vocab": true,
+          "definition": "Memegang"
+        },
+        {
+          "text": " two shiny coconuts",
+          "vocab": true,
+          "definition": "Dua kelapa yang mengkilap"
+        },
+        { "text": ".\n“", "vocab": false },
+        {
+          "text": "I am Number 2",
+          "vocab": false,
+          "bold": true
+        },
+        { "text": ",” it said with ", "vocab": false },
+        {
+          "text": "a smile",
+          "vocab": true,
+          "definition": "Senyum"
+        },
+        { "text": ". “I like ", "vocab": false },
+        {
+          "text": "things in pairs",
+          "vocab": true,
+          "definition": "Hal-hal yang berpasangan"
+        },
+        { "text": ". Can you ", "vocab": false },
+        {
+          "text": "find",
+          "vocab": true,
+          "definition": "Menemukan"
+        },
+        { "text": " ", "vocab": false },
+        {
+          "text": "two ducks",
+          "vocab": true,
+          "definition": "Dua bebek"
+        },
+        { "text": " ", "vocab": false },
+        {
+          "text": "swimming",
+          "vocab": true,
+          "definition": "Berenang"
+        },
+        {
+          "text": " in the pond?”\nEza laughed as he spotted the ducks. “",
+          "vocab": false
+        },
+        {
+          "text": "One",
+          "vocab": false,
+          "bold": true
+        },
+        { "text": ", ", "vocab": false },
+        {
+          "text": "two",
+          "vocab": false,
+          "bold": true
+        },
+        { "text": "! ", "vocab": false },
+        {
+          "text": "Two",
+          "vocab": false,
+          "bold": true
+        },
+        { "text": " ducks!”", "vocab": false }
+      ],
+      "image": "/img/books/book2/page3.gif"
+    },
+    {
+      "id": "page-3",
+      "pageNumber": 4,
+      "content": [
+        { "text": "On ", "vocab": false },
+        {
+          "text": "the third hill",
+          "vocab": true,
+          "definition": "Bukit ketiga"
+        },
+        { "text": ", ", "vocab": false },
+        {
+          "text": "Number 3",
+          "bold": true
+        },
+        { "text": " was playing with ", "vocab": false },
+        {
+          "text": "three",
+          "vocab": true,
+          "definition": "Tiga"
+        },
+        {
+          "text": " ",
+          "vocab": false
+        },
+        {
+          "text": " colourful",
+          "vocab": true,
+          "definition": "warna-warni"
+        },
+        {
+          "text": " ",
+          "vocab": false
+        },
+        {
+          "text": "kites",
+          "vocab": true,
+          "definition": "layang-layang"
+        },
+        { "text": ".\n“Help me ", "vocab": false },
+        {
+          "text": "count",
+          "vocab": true,
+          "definition": "Menghitung"
+        },
+        { "text": " my kites, Eza!” ", "vocab": false },
+        {
+          "text": "Number 3",
+          "bold": true
+        },
+        { "text": " said.\nEza pointed to each kite: “", "vocab": false },
+        {
+          "text": "One",
+          "bold": true
+        },
+        { "text": ", ", "vocab": false },
+        {
+          "text": "two",
+          "bold": true
+        },
+        { "text": ", ", "vocab": false },
+        {
+          "text": "three",
+          "bold": true
+        },
+        { "text": "!”", "vocab": false }
+      ],
+      "image": "/img/books/book2/page4.gif"
+    },
+    {
+      "id": "page-3",
+      "pageNumber": 5,
+      "content": [
+        { "text": "As Eza ", "vocab": false },
+        {
+          "text": "travelled through",
+          "vocab": true,
+          "definition": "berkeliling"
+        },
+        { "text": " the village, he ", "vocab": false },
+        {
+          "text": "met",
+          "vocab": true,
+          "definition": "bertemu"
+        },
+        { "text": " more numbers:\n• ", "vocab": false },
+        {
+          "text": "Number 4",
+          "bold": true
+        },
+        { "text": " was on ", "vocab": false },
+        {
+          "text": "the fourth hill",
+          "vocab": true,
+          "definition": "bukit keempat"
+        },
+        { "text": ", ", "vocab": false },
+        {
+          "text": "building",
+          "vocab": true,
+          "definition": "membangun"
+        },
+        { "text": " a ", "vocab": false },
+        {
+          "text": "fence",
+          "vocab": true,
+          "definition": "pagar"
+        },
+        { "text": " with ", "vocab": false },
+        {
+          "text": "four strong bamboos",
+          "vocab": true,
+          "definition": "empat bambu yang kuat"
+        },
+        { "text": ". “I ", "vocab": false },
+        {
+          "text": "need",
+          "vocab": true,
+          "definition": "butuh"
+        },
+        { "text": " four bamboos; can you ", "vocab": false },
+        {
+          "text": "take",
+          "vocab": true,
+          "definition": "mengambil"
+        },
+        { "text": " it for me?” it asked. Eza ", "vocab": false },
+        {
+          "text": "took",
+          "vocab": true,
+          "definition": "mengambil"
+        },
+        { "text": " the bamboos while counting: “", "vocab": false },
+        {
+          "text": "One",
+          "bold": true
+        },
+        { "text": ", ", "vocab": false },
+        {
+          "text": "two",
+          "bold": true
+        },
+        { "text": ", ", "vocab": false },
+        {
+          "text": "three",
+          "bold": true
+        },
+        { "text": ", ", "vocab": false },
+        {
+          "text": "four",
+          "bold": true
+        },
+        { "text": "!”", "vocab": false }
+      ],
+      "image": "/img/books/book2/page4.gif"
+    },
+    {
+      "id": "page-3",
+      "pageNumber": 6,
+      "image": "/img/books/book2/page-.gif",
+      "content": [
+        {
+          "text": "Number 6",
+          "bold": true
+        },
+        { "text": " was ", "vocab": false },
+        {
+          "text": "teaching",
+          "vocab": true,
+          "definition": "mengajar"
+        },
+        { "text": " ", "vocab": false },
+        {
+          "text": "six little goats",
+          "vocab": true,
+          "definition": "enam anak kambing"
+        },
+        { "text": " how to ", "vocab": false },
+        {
+          "text": "jump",
+          "vocab": true,
+          "definition": "melompat"
+        },
+        { "text": ". “Count them as ", "vocab": false },
+        {
+          "text": "they",
+          "vocab": true,
+          "definition": "mereka"
+        },
+        { "text": " ", "vocab": false },
+        {
+          "text": "leap",
+          "vocab": true,
+          "definition": "meloncat"
+        },
+        { "text": "!” it giggled. Eza counted the goats, “", "vocab": false },
+        { "text": "One", "bold": true },
+        { "text": ", ", "vocab": false },
+        { "text": "two", "bold": true },
+        { "text": ", ", "vocab": false },
+        { "text": "three", "bold": true },
+        { "text": ", ", "vocab": false },
+        { "text": "four", "bold": true },
+        { "text": ", ", "vocab": false },
+        { "text": "five", "bold": true },
+        { "text": ", ", "vocab": false },
+        { "text": "six", "bold": true },
+        { "text": "!”", "vocab": false }
+      ]
+    },
+    {
+      "id": "page-7",
+      "pageNumber": 7,
+      "image": "",
+      "content": [
+        {
+          "text": "Number 7",
+          "bold": true
+        },
+        { "text": " was ", "vocab": false },
+        {
+          "text": "painting",
+          "vocab": true,
+          "definition": "melukis"
+        },
+        { "text": " a ", "vocab": false },
+        {
+          "text": "picture",
+          "vocab": true,
+          "definition": "gambar"
+        },
+        { "text": " of the ", "vocab": false },
+        {
+          "text": "seven colours",
+          "vocab": true,
+          "definition": "tujuh warna"
+        },
+        { "text": " of the ", "vocab": false },
+        {
+          "text": "rainbow",
+          "vocab": true,
+          "definition": "pelangi"
+        },
+        {
+          "text": ". “Can you count the colours on the rainbow?” it asked. Eza counted the colours, “",
+          "vocab": false
+        },
+        { "text": "One", "bold": true },
+        { "text": ", ", "vocab": false },
+        { "text": "two", "bold": true },
+        { "text": ", ", "vocab": false },
+        { "text": "three", "bold": true },
+        { "text": ", ", "vocab": false },
+        { "text": "four", "bold": true },
+        { "text": ", ", "vocab": false },
+        { "text": "five", "bold": true },
+        { "text": ", ", "vocab": false },
+        { "text": "six", "bold": true },
+        { "text": ", ", "vocab": false },
+        { "text": "seven", "bold": true },
+        { "text": "!”", "vocab": false }
+      ]
+    },
+    {
+      "id": "page-8",
+      "pageNumber": 8,
+      "image": "",
+      "content": [
+        { "text": "When Eza ", "vocab": false },
+        {
+          "text": "reached",
+          "vocab": true,
+          "definition": "mencapai"
+        },
+        { "text": " ", "vocab": false },
+        {
+          "text": "the eighth hill",
+          "vocab": true,
+          "definition": "bukit kedelapan"
+        },
+        { "text": ", ", "vocab": false },
+        {
+          "text": "Number 8",
+          "bold": true
+        },
+        { "text": " was ", "vocab": false },
+        {
+          "text": "blowing",
+          "vocab": true,
+          "definition": "meniup"
+        },
+        { "text": " ", "vocab": false },
+        {
+          "text": "bubbles",
+          "vocab": true,
+          "definition": "gelembung"
+        },
+        { "text": ".\n“Count my bubbles, Eza!” it said as ", "vocab": false },
+        {
+          "text": "eight shiny bubbles",
+          "vocab": true,
+          "definition": "delapan gelembung mengilap"
+        },
+        { "text": " ", "vocab": false },
+        {
+          "text": "floated",
+          "vocab": true,
+          "definition": "melayang"
+        },
+        { "text": " ", "vocab": false },
+        {
+          "text": "into the sky",
+          "vocab": true,
+          "definition": "ke langit"
+        },
+        { "text": ".\nEza counted, “", "vocab": false },
+        { "text": "One", "bold": true },
+        { "text": ", ", "vocab": false },
+        { "text": "two", "bold": true },
+        { "text": ", ", "vocab": false },
+        { "text": "three", "bold": true },
+        { "text": ", ", "vocab": false },
+        { "text": "four", "bold": true },
+        { "text": ", ", "vocab": false },
+        { "text": "five", "bold": true },
+        { "text": ", ", "vocab": false },
+        { "text": "six", "bold": true },
+        { "text": ", ", "vocab": false },
+        { "text": "seven", "bold": true },
+        { "text": ", ", "vocab": false },
+        { "text": "eight", "bold": true },
+        { "text": "!”", "vocab": false }
+      ]
+    },
+    {
+      "id": "page-9",
+      "pageNumber": 9,
+      "image": "",
+      "content": [
+        { "text": "At ", "vocab": false },
+        {
+          "text": "the ninth hill",
+          "vocab": true,
+          "definition": "bukit kesembilan"
+        },
+        { "text": ", ", "vocab": false },
+        {
+          "text": "Number 9",
+          "bold": true
+        },
+        { "text": " was ", "vocab": false },
+        {
+          "text": "harvesting",
+          "vocab": true,
+          "definition": "memanen"
+        },
+        { "text": " ", "vocab": false },
+        {
+          "text": "nine juicy mangoes",
+          "vocab": true,
+          "definition": "sembilan mangga yang segar"
+        },
+        {
+          "text": ". “Help me count them so I can share them with the village,” it said.\nEza ",
+          "vocab": false
+        },
+        {
+          "text": "happily",
+          "vocab": true,
+          "definition": "dengan senang hati"
+        },
+        { "text": " counted: “", "vocab": false },
+        { "text": "One", "bold": true },
+        { "text": ", ", "vocab": false },
+        { "text": "two", "bold": true },
+        { "text": ", ", "vocab": false },
+        { "text": "three", "bold": true },
+        { "text": ", ", "vocab": false },
+        { "text": "four", "bold": true },
+        { "text": ", ", "vocab": false },
+        { "text": "five", "bold": true },
+        { "text": ", ", "vocab": false },
+        { "text": "six", "bold": true },
+        { "text": ", ", "vocab": false },
+        { "text": "seven", "bold": true },
+        { "text": ", ", "vocab": false },
+        { "text": "eight", "bold": true },
+        { "text": ", ", "vocab": false },
+        { "text": "nine", "bold": true },
+        { "text": " mangoes!”", "vocab": false }
+      ]
+    },
+    {
+      "id": "page-10",
+      "pageNumber": 10,
+      "image": "",
+      "content": [
+        {
+          "text": "Finally",
+          "vocab": true,
+          "definition": "akhirnya"
+        },
+        { "text": ", Eza ", "vocab": false },
+        {
+          "text": "climbed",
+          "vocab": true,
+          "definition": "mendaki"
+        },
+        { "text": " ", "vocab": false },
+        {
+          "text": "the tenth hill",
+          "vocab": true,
+          "definition": "bukit kesepuluh"
+        },
+        { "text": ", ", "vocab": false },
+        {
+          "text": "the tallest",
+          "vocab": true,
+          "definition": "yang tertinggi"
+        },
+        { "text": " of them all. ", "vocab": false },
+        {
+          "text": "Number 10",
+          "bold": true
+        },
+        { "text": " was ", "vocab": false },
+        {
+          "text": "standing",
+          "vocab": true,
+          "definition": "berdiri"
+        },
+        { "text": " ", "vocab": false },
+        {
+          "text": "proudly",
+          "vocab": true,
+          "definition": "dengan bangga"
+        },
+        { "text": ", ", "vocab": false },
+        {
+          "text": "holding",
+          "vocab": true,
+          "definition": "memegang"
+        },
+        { "text": " ", "vocab": false },
+        {
+          "text": "ten golden coins",
+          "vocab": true,
+          "definition": "sepuluh koin emas"
+        },
+        { "text": ".\n“I am ", "vocab": false },
+        {
+          "text": "Number 10",
+          "bold": true
+        },
+        { "text": ",” it said. “I ", "vocab": false },
+        {
+          "text": "bring",
+          "vocab": true,
+          "definition": "menggabungkan"
+        },
+        {
+          "text": " all the numbers together. Can you count all the hills in our village?”\nEza ",
+          "vocab": false
+        },
+        {
+          "text": "turned",
+          "vocab": true,
+          "definition": "berbalik"
+        },
+        { "text": " and counted each hill. “", "vocab": false },
+        { "text": "One", "bold": true },
+        { "text": ", ", "vocab": false },
+        { "text": "two", "bold": true },
+        { "text": ", ", "vocab": false },
+        { "text": "three", "bold": true },
+        { "text": ", ", "vocab": false },
+        { "text": "four", "bold": true },
+        { "text": ", ", "vocab": false },
+        { "text": "five", "bold": true },
+        { "text": ", ", "vocab": false },
+        { "text": "six", "bold": true },
+        { "text": ", ", "vocab": false },
+        { "text": "seven", "bold": true },
+        { "text": ", ", "vocab": false },
+        { "text": "eight", "bold": true },
+        { "text": ", ", "vocab": false },
+        { "text": "nine", "bold": true },
+        { "text": ", ", "vocab": false },
+        { "text": "ten", "bold": true },
+        { "text": " hills!”. Once Eza said, “", "vocab": false },
+        { "text": "ten", "bold": true },
+        { "text": " hills!” a ", "vocab": false },
+        {
+          "text": "wooden box",
+          "vocab": true,
+          "definition": "kotak kayu"
+        },
+        { "text": " ", "vocab": false },
+        {
+          "text": "filled with",
+          "vocab": true,
+          "definition": "dipenuhi dengan"
+        },
+        { "text": " ", "vocab": false },
+        {
+          "text": "colourful",
+          "vocab": true,
+          "definition": "berwarna-warni"
+        },
+        { "text": " numbers ", "vocab": false },
+        {
+          "text": "cards",
+          "vocab": true,
+          "definition": "kartu-kartu"
+        },
+        { "text": " ", "vocab": false },
+        {
+          "text": "appear",
+          "vocab": true,
+          "definition": "muncul"
+        },
+        { "text": ".", "vocab": false }
+      ]
+    },
 
-  {
-    "id": "page-14",
-    "pageNumber": 14,
-    "content": "From that day on, the children in the village of Dewi Sri became the best storytellers. They wrote about their fields, their animals, and their festivals, sharing their culture with the world.",
-    "image": "/img/books/book2/page14.png",
-    "audio": "/story-audio-page14.mp3"
-  }
-]
+    {
+      "id": "page-11",
+      "pageNumber": 11,
+      "image": "/img/books/book2/page14.png",
+      "audio": "/story-audio-page14.mp3",
+      "content": [
+        {
+          "text": "The numbers ",
+          "vocab": false
+        },
+        {
+          "text": "cheered",
+          "vocab": true,
+          "definition": "bersorak"
+        },
+        {
+          "text": " and ",
+          "vocab": false
+        },
+        {
+          "text": "gave",
+          "vocab": true,
+          "definition": "memberikan"
+        },
+        {
+          "text": " Eza ",
+          "vocab": false
+        },
+        {
+          "text": "a special gift",
+          "vocab": true,
+          "definition": "hadiah istimewa"
+        },
+        {
+          "text": ": the wooden box filled with ",
+          "vocab": false
+        },
+        {
+          "text": "colourful",
+          "vocab": true,
+          "definition": "warna-warni"
+        },
+        {
+          "text": " number cards as ",
+          "vocab": false
+        },
+        {
+          "text": "a special gift",
+          "vocab": true,
+          "definition": "hadiah istimewa"
+        },
+        {
+          "text": ". ",
+          "vocab": false
+        },
+        {
+          "text": "“Now you can ",
+          "vocab": false
+        },
+        {
+          "text": "remember",
+          "vocab": true,
+          "definition": "mengingat"
+        },
+        {
+          "text": " us and help others ",
+          "vocab": false
+        },
+        {
+          "text": "learn to count",
+          "vocab": true,
+          "definition": "belajar menghitung"
+        },
+        {
+          "text": ",” they said. ",
+          "vocab": false
+        },
+        {
+          "text": "Eza said, “",
+          "vocab": false
+        },
+        {
+          "text": "Thank you very much",
+          "vocab": true,
+          "definition": "Terima kasih banyak"
+        },
+        {
+          "text": ".”\n",
+          "vocab": false
+        },
+        {
+          "text": "From that day on",
+          "vocab": true,
+          "definition": "Sejak hari itu"
+        },
+        {
+          "text": ", Eza ",
+          "vocab": false
+        },
+        {
+          "text": "became",
+          "vocab": true,
+          "definition": "menjadi"
+        },
+        {
+          "text": " ",
+          "vocab": false
+        },
+        {
+          "text": "the best counter",
+          "vocab": true,
+          "definition": "penghitung terbaik"
+        },
+        {
+          "text": " in the village, teaching his friends about the numbers of Ten Hills.",
+          "vocab": false
+        }
+      ]
+    }
+  ]
+}

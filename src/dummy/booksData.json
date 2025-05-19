@@ -1,24 +1,26 @@
 {
   "data": [
     {
-      "id": "06d7e5fe-e4f1-4c0a-b807-090d46033501",
+      "id": 1,
       "title": "The Alphabet in the Land of Dewi Sri",
       "author": "Miss Ani",
       "year": 2025,
       "genre": "Fiction",
       "focus": "Alphabet",
       "status": "available",
-      "image": "/img/books/book1/cover.png"
+      "image": "/img/books/book1/cover.png",
+      "dataSource": "bookData1.json"
     },
     {
-      "id": "06d7e5fe-e4f1-4c0a-b807-090d46033502",
+      "id": 2,
       "title": "The Numbers in the Village of Ten Hills",
       "author": "Miss Ani",
       "year": 2025,
       "genre": "Fiction",
       "focus": "Number",
       "status": "available",
-      "image": "/img/books/book2/cover.png"
+      "image": "/img/books/book2/cover.png",
+      "dataSource": "bookData2.json"
     },
     {
       "id": 3,

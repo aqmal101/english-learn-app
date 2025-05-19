@@ -1,9 +1,7 @@
-import { Link, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import booksData from "../dummy/booksData.json";
 import { useState } from "react";
 import { Lock } from "lucide-react";
-
-console.log(booksData.data);
 
 const BookCover = ({ image, title, isLocked, isLoading, onClick }) => {
   return (
