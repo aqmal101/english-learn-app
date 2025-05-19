@@ -10,8 +10,8 @@ const BookCover = ({ image, title, isLocked, isLoading, onClick }) => {
       onClick={isLocked ? undefined : onClick}
     >
       <div
-        className={`w-fit h-fit cursor pointer relative ease-in-out${
-          !isLocked ? "cursor-pointer" : "cursor-not-allowed"
+        className={`w-72 h-48 cursor pointer relative ease-in-out${
+          !isLocked ? "cursor-pointer" : "cursor-no-drop"
         } `}
       >
         <img
@@ -28,8 +28,8 @@ const BookCover = ({ image, title, isLocked, isLoading, onClick }) => {
 
         {/* Icon gembok jika locked */}
         {isLocked && (
-          <div className="absolute top-2 right-2 bg-white/70 rounded-full p-1">
-            <Lock className="w-6 h-6 text-gray-700" />
+          <div className="absolute top-2 right-2 bg-amber-500 rounded-full p-1">
+            <Lock className="w-6 h-6 text-white" />
           </div>
         )}
       </div>
@@ -42,7 +42,7 @@ const BooksPage = () => {
   const navigate = useNavigate();
 
   const handleClick = (book) => {
-    if (book.status === "locked") return;
+    if (book.status === false) return;
 
     setLoadingId(book.id);
 
@@ -60,14 +60,14 @@ const BooksPage = () => {
         >
           Story Page
         </div>
-        <div className="w-full h-[80%] grid grid-cols-3 grid-rows-2 place-content-center align-cente">
+        <div className="w-full h-[80%] grid grid-cols-4 grid-rows-2 place-content-center align-cente">
           {booksData.data.map((book) => (
             <BookCover
               key={book.id}
               image={book.image}
               title={book.title}
               isLoading={loadingId === book.id}
-              isLocked={book.status === "locked"}
+              isLocked={book.status === false}
               onClick={() => handleClick(book)}
             />
           ))}

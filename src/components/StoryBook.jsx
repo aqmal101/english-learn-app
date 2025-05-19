@@ -13,7 +13,7 @@ import TappingImage from "./TappingImage";
 import TappingElement from "./TappingElement";
 import { useNavigate } from "react-router-dom";
 
-export default function BookStory({ storyBookData }) {
+export default function StoryBook({ storyBookData }) {
   console.log("BookStory", storyBookData);
   const [currentSpreadIndex, setCurrentSpreadIndex] = useState(0);
   const [completedActivities, setCompletedActivities] = useState({});

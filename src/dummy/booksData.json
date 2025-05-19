@@ -7,7 +7,7 @@
       "year": 2025,
       "genre": "Fiction",
       "focus": "Alphabet",
-      "status": "available",
+      "status": true,
       "image": "/img/books/book1/cover.png",
       "dataSource": "bookData1.json"
     },
@@ -18,29 +18,29 @@
       "year": 2025,
       "genre": "Fiction",
       "focus": "Number",
-      "status": "available",
+      "status": true,
       "image": "/img/books/book2/cover.png",
       "dataSource": "bookData2.json"
     },
     {
       "id": 3,
-      "title": "1984",
+      "title": "Bawang Putih and the Kind Body Parts",
       "author": "George Orwell",
       "year": 1949,
       "genre": "Dystopian",
       "focus": "Alphabet",
-      "status": "locked",
-      "image": "https://picsum.photos/seed/picsum/200/300"
+      "status": false,
+      "image": "/img/books/book3/cover.png"
     },
     {
       "id": 4,
-      "title": "Pride and Prejudice",
+      "title": "The Big Mango Tree and the Family of Five",
       "author": "Jane Austen",
       "year": 1813,
       "genre": "Romance",
       "focus": "Alphabet",
-      "status": "locked",
-      "image": "https://picsum.photos/seed/picsum/200/300"
+      "status": false,
+      "image": "https://picsum.photos/seed/seed/800/900"
     },
     {
       "id": 5,
@@ -49,8 +49,8 @@
       "year": 1851,
       "genre": "Adventure",
       "focus": "Alphabet",
-      "status": "locked",
-      "image": "https://picsum.photos/seed/picsum/200/300"
+      "status": false,
+      "image": "https://picsum.photos/seed/seed/800/900"
     },
     {
       "id": 6,
@@ -59,8 +59,28 @@
       "year": 1869,
       "genre": "Historical",
       "focus": "Alphabet",
-      "status": "locked",
-      "image": "https://picsum.photos/seed/picsum/200/300"
+      "status": false,
+      "image": "https://picsum.photos/seed/seed/800/900"
+    },
+    {
+      "id": 7,
+      "title": "War and Peace",
+      "author": "Leo Tolstoy",
+      "year": 1869,
+      "genre": "Historical",
+      "focus": "Alphabet",
+      "status": false,
+      "image": "https://picsum.photos/seed/seed/800/900"
+    },
+    {
+      "id": 8,
+      "title": "War and Peace",
+      "author": "Leo Tolstoy",
+      "year": 1869,
+      "genre": "Historical",
+      "focus": "Alphabet",
+      "status": false,
+      "image": "https://picsum.photos/seed/seed/800/900"
     }
   ]
 }
