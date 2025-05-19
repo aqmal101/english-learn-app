@@ -18,414 +18,477 @@
         {
           "text": "Once upon a time",
           "vocab": true,
-          "definition": "Awal dari cerita dongeng"
+          "definition": "Pada suatu waktu"
         },
+        { "text": ", in a ", "vocab": false },
         {
-          "text": ", in ",
-          "vocab": false
-        },
-        {
-          "text": "a peaceful village",
+          "text": "peaceful village",
           "vocab": true,
-          "definition": "Desa yang tenang dan damai"
+          "definition": "Desa yang damai"
         },
+        { "text": ", there ", "vocab": false },
         {
-          "text": ", there lived ",
-          "vocab": false
-        },
-        {
-          "text": "a kind-hearted girl",
+          "text": "stood a big, old mango tree",
           "vocab": true,
-          "definition": "Gadis yang baik hati"
+          "definition": "Berdiri pohon mangga besar dan tua"
         },
+        { "text": " at the ", "vocab": false },
         {
-          "text": " ",
-          "vocab": false
-        },
-        {
-          "text": "named",
+          "text": "centre of a small yard",
           "vocab": true,
-          "definition": "Bernama"
+          "definition": "Tengah halaman kecil"
         },
+        { "text": ". Under its shade lived a loving ", "vocab": false },
         {
-          "text": " Bawang Putih. She was ",
-          "vocab": false
-        },
-        {
-          "text": "hardworking",
+          "text": "family",
           "vocab": true,
-          "definition": "Rajin bekerja"
+          "definition": "Keluarga yang penuh kasih",
+          "bold": true
         },
-        {
-          "text": " and ",
-          "vocab": false
-        },
-        {
-          "text": "loved",
-          "vocab": true,
-          "definition": "Menyukai"
-        },
-        {
-          "text": " ",
-          "vocab": false
-        },
-        {
-          "text": "helping others",
-          "vocab": true,
-          "definition": "Membantu orang lain"
-        },
-        {
-          "text": ".",
-          "vocab": false
-        }
+        { "text": " of five: ", "vocab": false },
+        { "text": "Father", "vocab": false, "bold": true },
+        { "text": ", ", "vocab": false },
+        { "text": "Mother", "vocab": false, "bold": true },
+        { "text": ", ", "vocab": false },
+        { "text": "Brother", "vocab": false, "bold": true },
+        { "text": ", ", "vocab": false },
+        { "text": "Sister", "vocab": false, "bold": true },
+        { "text": ", and ", "vocab": false },
+        { "text": "Baby", "vocab": false, "bold": true },
+        { "text": ". They shared everything, from their ", "vocab": false },
+        { "text": "meals", "vocab": true, "definition": "Makanan" },
+        { "text": " to their ", "vocab": false },
+        { "text": "dreams", "vocab": true, "definition": "Mimpi" },
+        { "text": ", and the mango tree ", "vocab": false },
+        { "text": "watched over", "vocab": true, "definition": "Menjaga" },
+        { "text": " them like a ", "vocab": false },
+        { "text": "guardian", "vocab": true, "definition": "Penjaga" },
+        { "text": ".", "vocab": false }
       ]
     },
     {
       "id": "page-2",
       "pageNumber": 2,
-      "image": "/img/books/book3/page2.png",
+      "image": "/img/books/book4/page2.png",
       "audio": "/story-audio-page2.mp3",
       "content": [
         { "text": "One day", "vocab": true, "definition": "Suatu hari" },
-        { "text": ", while ", "vocab": false },
-        { "text": "washing", "vocab": true, "definition": "Mencuci" },
-        { "text": " ", "vocab": false },
-        { "text": "clothes", "vocab": true, "definition": "Pakaian" },
-        { "text": " ", "vocab": false },
+        { "text": ", the ", "vocab": false },
+        { "text": "tree", "vocab": true, "definition": "Pohon" },
+        { "text": " spoke to them for the very ", "vocab": false },
+        { "text": "first time", "vocab": true, "definition": "Pertama kali" },
+        { "text": ". “Your ", "vocab": false },
         {
-          "text": "by the river",
+          "text": "family",
           "vocab": true,
-          "definition": "Di tepi sungai"
+          "definition": "Keluarga",
+          "bold": true
         },
-        { "text": ", ", "vocab": false },
-        {
-          "text": "her favourite scarf",
-          "vocab": true,
-          "definition": "Syal kesayangannya"
-        },
+        { "text": " is like my five ", "vocab": false },
+        { "text": "strong", "vocab": true, "definition": "Kuat" },
         { "text": " ", "vocab": false },
-        { "text": "slipped", "vocab": true, "definition": "Tergelincir" },
-        { "text": " into the water and ", "vocab": false },
-        { "text": "disappeared", "vocab": true, "definition": "Menghilang" },
-        { "text": ". As she ", "vocab": false },
-        { "text": "tried", "vocab": true, "definition": "Mencoba" },
-        { "text": " to ", "vocab": false },
-        { "text": "reach", "vocab": true, "definition": "Menjangkau" },
-        { "text": " it, ", "vocab": false },
-        {
-          "text": "an old woman",
-          "vocab": true,
-          "definition": "Seorang wanita tua"
-        },
-        { "text": " ", "vocab": false },
-        { "text": "appeared", "vocab": true, "definition": "Muncul" },
-        { "text": " from ", "vocab": false },
-        { "text": "the woods", "vocab": true, "definition": "Hutan" },
-        { "text": ".", "vocab": false }
+        { "text": "branches", "vocab": true, "definition": "Cabang-cabang" },
+        { "text": ",\" it said. “Each of you has a special ", "vocab": false },
+        { "text": "role", "vocab": true, "definition": "Peran" },
+        { "text": ", and ", "vocab": false },
+        { "text": "together", "vocab": true, "definition": "Bersama-sama" },
+        { "text": " you ", "vocab": false },
+        { "text": "make", "vocab": true, "definition": "Membuat" },
+        { "text": " your ", "vocab": false },
+        { "text": "home", "vocab": true, "definition": "Rumah" },
+        { "text": " happy and strong. Let me show you.”", "vocab": false }
       ]
     },
     {
       "id": "page-3",
       "pageNumber": 3,
-      "image": "/img/books/book3/page3.png",
+      "image": "/img/books/book4/page3.png",
       "audio": "/story-audio-page3.mp3",
       "content": [
-        { "text": "“Bawang Putih,” said the old woman with ", "vocab": false },
-        { "text": "a kind smile", "vocab": true, "definition": "Senyum ramah" },
-        { "text": ", “I will ", "vocab": false },
-        { "text": "return", "vocab": true, "definition": "Mengembalikan" },
-        { "text": " your ", "vocab": false },
-        { "text": "scarf", "vocab": true, "definition": "Syal" },
-        { "text": ", ", "vocab": false },
-        { "text": "but", "vocab": true, "definition": "Tetapi" },
+        { "text": "The ", "vocab": false },
+        { "text": "Father", "vocab": true, "definition": "Ayah", "bold": true },
         { "text": " ", "vocab": false },
-        { "text": "only if", "vocab": true, "definition": "Hanya jika" },
-        { "text": " you ", "vocab": false },
-        { "text": "visit", "vocab": true, "definition": "Mengunjungi" },
-        { "text": " ", "vocab": false },
-        { "text": "my house", "vocab": true, "definition": "Rumahku" },
-        { "text": " and ", "vocab": false },
-        { "text": "learn", "vocab": true, "definition": "Belajar" },
-        { "text": " the ", "vocab": false },
-        { "text": "secrets", "vocab": true, "definition": "Rahasia" },
-        { "text": " of your ", "vocab": false },
         {
-          "text": "body parts",
+          "text": "stepped forward",
           "vocab": true,
-          "definition": "Bagian-bagian tubuh",
-          "bold": true
+          "definition": "Melangkah maju"
         },
-        { "text": ".”", "vocab": false }
+        { "text": ", ", "vocab": false },
+        { "text": "curious", "vocab": true, "definition": "Penasaran" },
+        { "text": ". “You are the ", "vocab": false },
+        { "text": "tallest", "vocab": true, "definition": "Tertinggi" },
+        { "text": " branch,” the ", "vocab": false },
+        { "text": "tree", "vocab": true, "definition": "Pohon" },
+        { "text": " said. “You ", "vocab": false },
+        { "text": "stand", "vocab": true, "definition": "Berdiri" },
+        { "text": " strong to ", "vocab": false },
+        { "text": "protect", "vocab": true, "definition": "Melindungi" },
+        { "text": " everyone. Can you tell me how you ", "vocab": false },
+        { "text": "care for", "vocab": true, "definition": "Merawat" },
+        { "text": " your ", "vocab": false },
+        { "text": "family", "vocab": true, "definition": "Keluarga" },
+        { "text": "?\" ", "vocab": false },
+        { "text": "Father", "vocab": true },
+        { "text": " ", "vocab": false },
+        { "text": "smiled", "vocab": true, "definition": "Tersenyum" },
+        { "text": " and said, “I ", "vocab": false },
+        { "text": "work hard", "vocab": true, "definition": "Bekerja keras" },
+        { "text": " in the ", "vocab": false },
+        { "text": "fields", "vocab": true, "definition": "Ladang" },
+        { "text": " and ", "vocab": false },
+        { "text": "build", "vocab": true, "definition": "Membangun" },
+        { "text": " a ", "vocab": false },
+        { "text": "safe home", "vocab": true, "definition": "Rumah yang aman" },
+        { "text": " for my ", "vocab": false },
+        { "text": "family", "vocab": true, "definition": "Keluarga" },
+        { "text": "”. “Just ", "vocab": false },
+        { "text": "like", "vocab": true, "definition": "Seperti" },
+        { "text": " my ", "vocab": false },
+        {
+          "text": "tall branch reaches for the sky",
+          "vocab": true,
+          "definition": "Cabang tinggi saya meraih langit"
+        },
+        { "text": " to ", "vocab": false },
+        { "text": "catch", "vocab": true, "definition": "Menangkap" },
+        { "text": " the ", "vocab": false },
+        { "text": "sunlight", "vocab": true, "definition": "Sinar matahari" },
+        { "text": ",” said the tree.", "vocab": false }
       ]
     },
     {
       "id": "page-4",
       "pageNumber": 4,
-      "image": "/img/books/book3/page4.png",
+      "image": "/img/books/book4/page4.png",
       "audio": "/story-audio-page4.mp3",
       "content": [
-        { "text": "Curious", "vocab": true, "definition": "Penasaran" },
+        { "text": "The ", "vocab": false },
+        { "text": "Mother", "vocab": true, "definition": "Ibu", "bold": true },
+        { "text": " ", "vocab": false },
+        { "text": "placed", "vocab": true, "definition": "Meletakkan" },
+        { "text": " her ", "vocab": false },
+        { "text": "hand", "vocab": true, "definition": "Tangan" },
+        { "text": " on the ", "vocab": false },
+        { "text": "tree", "vocab": true, "definition": "Pohon" },
+        { "text": ". “You are my ", "vocab": false },
+        {
+          "text": "steady middle branch",
+          "vocab": true,
+          "definition": "Cabang tengah yang kokoh"
+        },
+        { "text": ",“ said the tree. “You ", "vocab": false },
+        {
+          "text": "hold everything together",
+          "vocab": true,
+          "definition": "Menjaga semuanya tetap bersama"
+        },
         { "text": " and ", "vocab": false },
-        { "text": "respectful", "vocab": true, "definition": "Hormat" },
-        { "text": ", Bawang Putih ", "vocab": false },
-        { "text": "followed", "vocab": true, "definition": "Mengikuti" },
-        { "text": " the old woman to ", "vocab": false },
+        { "text": "bring", "vocab": true, "definition": "Membawa" },
+        { "text": " ", "vocab": false },
+        { "text": "life", "vocab": true, "definition": "Kehidupan" },
+        { "text": " to the ", "vocab": false },
+        { "text": "family", "vocab": true, "definition": "Keluarga" },
+        { "text": ". What do you do for your ", "vocab": false },
+        { "text": "family", "vocab": true },
+        { "text": "?” ", "vocab": false },
+        { "text": "Mother", "vocab": true },
+        { "text": " ", "vocab": false },
         {
-          "text": "her cozy little hut",
+          "text": "smiled warmly",
           "vocab": true,
-          "definition": "Gubuk kecil yang nyaman"
+          "definition": "Tersenyum hangat"
         },
-        { "text": ". ", "vocab": false },
-        { "text": "Inside", "vocab": true, "definition": "Di dalam" },
-        { "text": ", the old woman ", "vocab": false },
-        { "text": "brought out", "vocab": true, "definition": "Mengeluarkan" },
-        { "text": " a ", "vocab": false },
+        { "text": ". “I ", "vocab": false },
         {
-          "text": "magical mirror",
+          "text": "cook meals",
           "vocab": true,
-          "definition": "Cermin ajaib"
+          "definition": "Memasak makanan"
         },
-        { "text": ". “", "vocab": false },
+        { "text": ", ", "vocab": false },
         {
-          "text": "Look into this mirror",
+          "text": "care for everyone",
           "vocab": true,
-          "definition": "Lihat ke dalam cermin ini"
+          "definition": "Merawat semua orang"
         },
-        { "text": ",” she said, “and ", "vocab": false },
-        { "text": "your body", "vocab": true, "definition": "Tubuhmu" },
-        { "text": " will ", "vocab": false },
-        { "text": "tell", "vocab": true, "definition": "Memberi tahu" },
-        { "text": " you ", "vocab": false },
+        { "text": ", and ", "vocab": false },
         {
-          "text": "its secrets",
+          "text": "keep our home warm with love",
           "vocab": true,
-          "definition": "Rahasia-rahasianya"
+          "definition": "Menjaga rumah kami tetap hangat dengan cinta"
         },
-        { "text": ".”", "vocab": false }
+        { "text": ".” “Like how I hold my ", "vocab": false },
+        { "text": "leaves", "vocab": true, "definition": "Daun-daun" },
+        { "text": " and ", "vocab": false },
+        { "text": "fruit", "vocab": true, "definition": "Buah" },
+        { "text": " close, giving ", "vocab": false },
+        {
+          "text": "shade",
+          "vocab": true,
+          "definition": "Nafas teduh / keteduhan"
+        },
+        { "text": " and ", "vocab": false },
+        {
+          "text": "nourishment",
+          "vocab": true,
+          "definition": "Gizi / nutrisi"
+        },
+        { "text": ",“ said the tree.", "vocab": false }
       ]
     },
     {
       "id": "page-5",
       "pageNumber": 5,
-      "image": "/img/books/book3/page5.png",
+      "image": "/img/books/book4/page5.png",
       "audio": "/story-audio-page5.mp3",
       "content": [
-        { "text": "First, Bawang Putih’s ", "vocab": false },
+        { "text": "The ", "vocab": false },
         {
-          "text": "hands",
+          "text": "Brother",
           "vocab": true,
-          "definition": "Tangan",
+          "definition": "Saudara laki-laki",
           "bold": true
         },
-        { "text": " spoke. “We are your ", "vocab": false },
-        { "text": "hands", "vocab": true, "definition": "Tangan" },
-        { "text": ", Bawang Putih. We ", "vocab": false },
-        { "text": "help", "vocab": true, "definition": "Membantu" },
-        { "text": " you ", "vocab": false },
-        { "text": "carry", "vocab": true, "definition": "Membawa" },
         { "text": " ", "vocab": false },
-        { "text": "baskets", "vocab": true, "definition": "Keranjang" },
-        { "text": ", ", "vocab": false },
-        { "text": "sew", "vocab": true, "definition": "Menjahit" },
-        { "text": " ", "vocab": false },
-        { "text": "clothes", "vocab": true, "definition": "Pakaian" },
-        { "text": ", and ", "vocab": false },
-        { "text": "plant", "vocab": true, "definition": "Menanam" },
-        { "text": " ", "vocab": false },
-        { "text": "rice", "vocab": true, "definition": "Padi" },
-        { "text": ". But we also ", "vocab": false },
-        { "text": "love", "vocab": true, "definition": "Mencintai" },
-        { "text": " to ", "vocab": false },
         {
-          "text": "help others!",
+          "text": "came next",
           "vocab": true,
-          "definition": "Membantu orang lain!"
+          "definition": "Datang berikutnya"
         },
-        { "text": " Can you ", "vocab": false },
-        { "text": "clap", "vocab": true, "definition": "Menepuk tangan" },
-        { "text": " your ", "vocab": false },
-        { "text": "hands", "vocab": true, "definition": "Tangan" },
-        { "text": " to ", "vocab": false },
-        { "text": "show", "vocab": true, "definition": "Menunjukkan" },
-        { "text": " us you’re ", "vocab": false },
-        { "text": "ready", "vocab": true, "definition": "Siap" },
-        { "text": " to help?”", "vocab": false }
+        { "text": ". “You are a ", "vocab": false },
+        {
+          "text": "sturdy side branch",
+          "vocab": true,
+          "definition": "Cabang samping yang kuat"
+        },
+        { "text": ",” the tree said. “You are ", "vocab": false },
+        {
+          "text": "growing strong",
+          "vocab": true,
+          "definition": "Tumbuh kuat"
+        },
+        { "text": " and ", "vocab": false },
+        {
+          "text": "learning to help",
+          "vocab": true,
+          "definition": "Belajar untuk membantu"
+        },
+        { "text": ". What do you do for your ", "vocab": false },
+        { "text": "family", "vocab": true, "definition": "Keluarga" },
+        { "text": "?” ", "vocab": false },
+        { "text": "Brother", "vocab": true },
+        { "text": " stood tall. “I help ", "vocab": false },
+        { "text": "Father", "vocab": true, "bold": true },
+        { "text": " in the fields and ", "vocab": false },
+        { "text": "carry water", "vocab": true, "definition": "Membawa air" },
+        { "text": " for the ", "vocab": false },
+        { "text": "house", "vocab": true, "definition": "Rumah" },
+        { "text": ".” “Like how I help my ", "vocab": false },
+        { "text": "fruits", "vocab": true, "definition": "Buah-buahan" },
+        { "text": " grow strong and ", "vocab": false },
+        { "text": "healthy", "vocab": true, "definition": "Sehat" },
+        { "text": ",” said the tree.", "vocab": false }
       ]
     },
     {
       "id": "page-6",
       "pageNumber": 6,
-      "image": "/img/books/book3/page6.png",
+      "image": "/img/books/book4/page6.png",
       "audio": "/story-audio-page6.mp3",
       "content": [
-        { "text": "Next, her ", "vocab": false },
-        { "text": "feet", "vocab": true, "definition": "Kaki", "bold": true },
-        { "text": " ", "vocab": false },
-        { "text": "tapped", "vocab": true, "definition": "Mengetuk" },
+        { "text": "The ", "vocab": false },
+        {
+          "text": "Sister",
+          "vocab": true,
+          "definition": "Saudari perempuan",
+          "bold": true
+        },
         { "text": " ", "vocab": false },
         { "text": "gently", "vocab": true, "definition": "Dengan lembut" },
-        { "text": ". “We are your ", "vocab": false },
-        { "text": "feet", "vocab": true },
-        { "text": "! We carry you to ", "vocab": false },
-        { "text": "the market", "vocab": true, "definition": "Pasar" },
-        { "text": ", ", "vocab": false },
-        { "text": "the fields", "vocab": true, "definition": "Ladang" },
-        { "text": ", and ", "vocab": false },
-        { "text": "the river", "vocab": true, "definition": "Sungai" },
-        { "text": ". But ", "vocab": false },
-        { "text": "remember", "vocab": true, "definition": "Ingatlah" },
-        { "text": ", we also love to ", "vocab": false },
-        { "text": "dance", "vocab": true, "definition": "Menari" },
-        { "text": " when you’re ", "vocab": false },
-        { "text": "happy", "vocab": true, "definition": "Bahagia" },
-        { "text": "! Can you ", "vocab": false },
-        { "text": "stomp", "vocab": true, "definition": "Menghentakkan" },
-        { "text": " your ", "vocab": false },
-        { "text": "feet", "vocab": true },
-        { "text": " with ", "vocab": false },
-        { "text": "joy", "vocab": true, "definition": "Kegembiraan" },
-        { "text": "?”", "vocab": false }
+        { "text": " ", "vocab": false },
+        { "text": "touched", "vocab": true, "definition": "Menyentuh" },
+        { "text": " the tree.\n“You are my ", "vocab": false },
+        { "text": "graceful", "vocab": true, "definition": "Anggun" },
+        {
+          "text": " young branch,” the tree said. “You bring ",
+          "vocab": false
+        },
+        { "text": "beauty", "vocab": true, "definition": "Keindahan" },
+        { "text": " and ", "vocab": false },
+        { "text": "joy", "vocab": true, "definition": "Kebahagiaan" },
+        { "text": " to the ", "vocab": false },
+        { "text": "family", "vocab": true, "definition": "Keluarga" },
+        { "text": ". How do you help at home?”\n", "vocab": false },
+        { "text": "Sister", "vocab": true, "definition": "Saudari perempuan" },
+        { "text": " smiled ", "vocab": false },
+        { "text": "shyly", "vocab": true, "definition": "Dengan malu-malu" },
+        { "text": ". “I ", "vocab": false },
+        { "text": "take care", "vocab": true, "definition": "Merawat" },
+        { "text": " of ", "vocab": false },
+        { "text": "Baby", "vocab": true, "definition": "Bayi", "bold": true },
+        { "text": " and ", "vocab": false },
+        {
+          "text": "sing songs",
+          "vocab": true,
+          "definition": "Menyanyikan lagu"
+        },
+        { "text": " to make everyone happy.”\n“Like my ", "vocab": false },
+        { "text": "flowers", "vocab": true, "definition": "Bunga-bunga" },
+        { "text": " that bring ", "vocab": false },
+        { "text": "colour", "vocab": true, "definition": "Warna" },
+        { "text": " and ", "vocab": false },
+        { "text": "fragrance", "vocab": true, "definition": "Aroma" },
+        { "text": " to the ", "vocab": false },
+        { "text": "world", "vocab": true, "definition": "Dunia" },
+        { "text": ",” said the tree.", "vocab": false }
       ]
     },
     {
       "id": "page-7",
       "pageNumber": 7,
-      "image": "/img/books/book3/page7.png",
+      "image": "/img/books/book4/page7.png",
       "audio": "/story-audio-page7.mp3",
       "content": [
-        { "text": "Then, her ", "vocab": false },
-        { "text": "eyes", "vocab": true, "definition": "Mata", "bold": true },
-        { "text": " began to ", "vocab": false },
-        { "text": "sparkle", "vocab": true, "definition": "Berkilau" },
-        { "text": ". “We are your ", "vocab": false },
-        { "text": "eyes", "vocab": true },
-        { "text": ", Bawang Putih. We ", "vocab": false },
-        { "text": "see", "vocab": true, "definition": "Melihat" },
-        { "text": " the beauty of the ", "vocab": false },
-        { "text": "sunrise", "vocab": true, "definition": "Matahari terbit" },
-        { "text": ", your mother’s ", "vocab": false },
-        { "text": "smile", "vocab": true, "definition": "Senyuman" },
-        { "text": ", and the path to kindness. ", "vocab": false },
-        { "text": "Close", "vocab": true, "definition": "Tutup" },
-        { "text": " and ", "vocab": false },
-        { "text": "open", "vocab": true, "definition": "Buka" },
-        { "text": " your ", "vocab": false },
-        { "text": "eyes", "vocab": true },
-        { "text": " to ", "vocab": false },
-        { "text": "thank", "vocab": true, "definition": "Bersyukur kepada" },
-        { "text": " us.”", "vocab": false }
+        { "text": "Finally, little ", "vocab": false },
+        { "text": "Baby", "vocab": true, "definition": "Bayi", "bold": true },
+        { "text": " ", "vocab": false },
+        {
+          "text": "toddled up",
+          "vocab": true,
+          "definition": "Berjalan tertatih-tatih"
+        },
+        { "text": " to the tree, ", "vocab": false },
+        { "text": "giggling", "vocab": true, "definition": "Terkikik" },
+        { "text": ".\n“And you,” said the tree, “are my ", "vocab": false },
+        {
+          "text": "smallest branch",
+          "vocab": true,
+          "definition": "Ranting terkecil"
+        },
+        { "text": ". You are still growing, but you ", "vocab": false },
+        { "text": "remind", "vocab": true, "definition": "Mengingatkan" },
+        {
+          "text": " everyone of the joy of life. What do you do?”\n",
+          "vocab": false
+        },
+        { "text": "Baby", "vocab": true },
+        { "text": " ", "vocab": false },
+        { "text": "clapped", "vocab": true, "definition": "Bertepuk tangan" },
+        { "text": " their hands and ", "vocab": false },
+        { "text": "laughed", "vocab": true, "definition": "Tertawa" },
+        { "text": ". “I make everyone smile!”\nThe tree ", "vocab": false },
+        { "text": "chuckled", "vocab": true, "definition": "Terkekeh" },
+        { "text": ". “Just like my ", "vocab": false },
+        { "text": "tiny buds", "vocab": true, "definition": "Kuncup kecil" },
+        { "text": " that remind me of ", "vocab": false },
+        {
+          "text": "new beginnings",
+          "vocab": true,
+          "definition": "Permulaan baru"
+        },
+        { "text": ".”", "vocab": false }
       ]
     },
     {
       "id": "page-8",
       "pageNumber": 8,
-      "image": "/img/books/book3/page8.png",
+      "image": "/img/books/book4/page8.png",
       "audio": "/story-audio-page8.mp3",
       "content": [
-        { "text": "Her ", "vocab": false },
+        { "text": "The tree ", "vocab": false },
+        { "text": "looked", "vocab": true, "definition": "Melihat" },
+        { "text": " at the ", "vocab": false },
         {
-          "text": "ears",
+          "text": "family",
           "vocab": true,
-          "definition": "Telinga",
+          "definition": "Keluarga",
           "bold": true
         },
-        { "text": " ", "vocab": false },
-        { "text": "wiggled", "vocab": true, "definition": "Bergoyang" },
-        { "text": ". “We are your ", "vocab": false },
-        { "text": "ears", "vocab": true },
-        { "text": ". We hear the ", "vocab": false },
-        { "text": "wind", "vocab": true, "definition": "Angin" },
-        { "text": ", ", "vocab": false },
-        { "text": "the birds", "vocab": true, "definition": "Burung-burung" },
-        { "text": ", and your mother’s ", "vocab": false },
-        { "text": "voice", "vocab": true, "definition": "Suara" },
-        { "text": " when she ", "vocab": false },
-        { "text": "sings", "vocab": true, "definition": "Bernyanyi" },
-        { "text": " you to sleep. ", "vocab": false },
+        { "text": " of five and said, “Each of you is like ", "vocab": false },
         {
-          "text": "Cup",
+          "text": "a part of me",
           "vocab": true,
-          "definition": "Menutup seperti mangkuk"
+          "definition": "Bagian dariku"
         },
-        { "text": " your ", "vocab": false },
-        { "text": "ears", "vocab": true },
-        { "text": " and listen to the ", "vocab": false },
-        { "text": "kindness", "vocab": true, "definition": "Kebaikan" },
-        { "text": " around you.”", "vocab": false }
+        { "text": ", and together, you make your ", "vocab": false },
+        { "text": "family", "vocab": true, "definition": "Keluarga" },
+        { "text": " strong and ", "vocab": false },
+        {
+          "text": "full of love",
+          "vocab": true,
+          "definition": "Penuh kasih sayang"
+        },
+        { "text": ". Always care for ", "vocab": false },
+        {
+          "text": "one another",
+          "vocab": true,
+          "definition": "Satu sama lain"
+        },
+        {
+          "text": ", and you will grow as tall and strong as I have.”",
+          "vocab": false
+        }
       ]
     },
     {
       "id": "page-9",
       "pageNumber": 9,
-      "image": "/img/books/book3/page9.png",
+      "image": "/img/books/book4/page9.png",
       "audio": "/story-audio-page9.mp3",
       "content": [
-        { "text": "Lastly, her ", "vocab": false },
-        { "text": "heart", "vocab": true, "definition": "Hati", "bold": true },
-        { "text": " and ", "vocab": false },
-        { "text": "chest", "vocab": true, "definition": "Dada", "bold": true },
-        { "text": " ", "vocab": false },
-        { "text": "glowed", "vocab": true, "definition": "Bersinar" },
-        { "text": ". “I am your ", "vocab": false },
-        { "text": "heart", "vocab": true },
-        { "text": ", Bawang Putih. I ", "vocab": false },
-        { "text": "feel", "vocab": true, "definition": "Merasa" },
-        { "text": " ", "vocab": false },
-        { "text": "love", "vocab": true, "definition": "Cinta" },
+        { "text": "From that day on, the ", "vocab": false },
+        {
+          "text": "family",
+          "vocab": true,
+          "definition": "Keluarga",
+          "bold": true
+        },
+        { "text": " of five ", "vocab": false },
+        { "text": "appreciated", "vocab": true, "definition": "Menghargai" },
+        { "text": " each other even more. They ", "vocab": false },
+        { "text": "sat", "vocab": true, "definition": "Duduk" },
+        { "text": " under the mango tree every ", "vocab": false },
+        { "text": "evening", "vocab": true, "definition": "Sore" },
+        { "text": ", sharing ", "vocab": false },
+        { "text": "stories", "vocab": true, "definition": "Cerita-cerita" },
         { "text": ", ", "vocab": false },
-        { "text": "sadness", "vocab": true, "definition": "Kesedihan" },
+        { "text": "laughter", "vocab": true, "definition": "Tawa" },
         { "text": ", and ", "vocab": false },
-        { "text": "joy", "vocab": true },
-        { "text": ". I give you ", "vocab": false },
-        { "text": "courage", "vocab": true, "definition": "Keberanian" },
-        { "text": " when you need it most. Put your ", "vocab": false },
-        { "text": "hand", "vocab": true, "definition": "Tangan" },
-        { "text": " on your ", "vocab": false },
-        { "text": "chest", "vocab": true },
-        { "text": " and ", "vocab": false },
-        { "text": "feel", "vocab": true },
-        { "text": " my ", "vocab": false },
-        { "text": "beat", "vocab": true, "definition": "Detak" },
-        { "text": ".”", "vocab": false }
+        { "text": "dreams", "vocab": true, "definition": "Mimpi-mimpi" },
+        { "text": ". ", "vocab": false },
+        { "text": "Knowing", "vocab": true, "definition": "Menyadari" },
+        { "text": " that together, they were ", "vocab": false },
+        {
+          "text": "unstoppable",
+          "vocab": true,
+          "definition": "Tak terhentikan"
+        },
+        { "text": ".", "vocab": false }
       ]
     },
     {
       "id": "page-10",
       "pageNumber": 10,
-      "image": "/img/books/book3/page10.png",
+      "image": "/img/books/book4/page10.png",
       "audio": "/story-audio-page10.mp3",
       "content": [
-        { "text": "Bawang Putih ", "vocab": false },
-        { "text": "thanked", "vocab": true, "definition": "Berterima kasih" },
-        { "text": " the old woman and ", "vocab": false },
+        { "text": "And so, under the big mango tree, the ", "vocab": false },
         {
-          "text": "returned home",
+          "text": "family",
           "vocab": true,
-          "definition": "Pulang ke rumah"
+          "definition": "Keluarga",
+          "bold": true
         },
-        { "text": ". Now, every time she ", "vocab": false },
-        { "text": "moved", "vocab": true, "definition": "Bergerak" },
-        { "text": ", she ", "vocab": false },
-        { "text": "remembered", "vocab": true, "definition": "Mengingat" },
-        { "text": " her ", "vocab": false },
-        {
-          "text": "body’s wisdom",
-          "vocab": true,
-          "definition": "Kebijaksanaan tubuh"
-        },
-        { "text": ". And she ", "vocab": false },
-        {
-          "text": "lived each day",
-          "vocab": true,
-          "definition": "Menjalani setiap hari"
-        },
-        { "text": " with ", "vocab": false },
-        { "text": "gratitude", "vocab": true, "definition": "Rasa syukur" },
-        { "text": ", ", "vocab": false },
-        { "text": "kindness", "vocab": true },
+        { "text": " lived ", "vocab": false },
+        { "text": "happily", "vocab": true, "definition": "Dengan bahagia" },
+        { "text": " ever after, ", "vocab": false },
+        { "text": "growing", "vocab": true, "definition": "Tumbuh" },
+        { "text": " in love, ", "vocab": false },
+        { "text": "kindness", "vocab": true, "definition": "Kebaikan" },
         { "text": ", and ", "vocab": false },
-        { "text": "joy", "vocab": true },
-        { "text": ".", "vocab": false }
+        { "text": "togetherness", "vocab": true, "definition": "Kebersamaan" },
+        { "text": ", just like the ", "vocab": false },
+        { "text": "branches", "vocab": true, "definition": "Dahan-dahan" },
+        { "text": " of their wise old tree.", "vocab": false }
       ]
     }
   ]

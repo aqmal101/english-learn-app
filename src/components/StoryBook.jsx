@@ -199,7 +199,7 @@ export default function StoryBook({ storyBookData }) {
                   definition={part.definition}
                   className={
                     part.bold
-                      ? "font-bolder text-orange-600"
+                      ? "font-bolder text-orange-600 underline"
                       : "text-blue-600 underline"
                   }
                 />
